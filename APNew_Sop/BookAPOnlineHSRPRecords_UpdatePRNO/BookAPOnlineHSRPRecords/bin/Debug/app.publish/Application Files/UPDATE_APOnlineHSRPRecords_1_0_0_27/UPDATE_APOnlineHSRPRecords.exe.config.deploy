@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <!--<add key="ConnectionStringLocalDL" value="Database=hsrpts;Server=43.242.124.20;UID=hsrp12420;PWD=#1@A8fX!2v; pooling=true; Max Pool Size=200;Connect Timeout=0"></add>-->
+    <add key="ConnectionString" value="Database=HSRPAP;Server=43.242.124.17;UID=hsrpap201617;PWD=z#s2$Avs; pooling=true; Max Pool Size=200;Connect Timeout=0">
+    </add>
+    <!--<add key="ConnectionStringLocalDL" value="Database=HSRPTemp;Server=203.122.59.55;UID=hsrpapp2x;PWD=zxcPOI098#; pooling=true; Max Pool Size=200;Connect Timeout=0"></add>-->
+    <!--<add key="ConnectionStringLocalDL" value="Database=TEMPHSRP;Server=180.151.100.245;UID=hsrpdl01app;PWD=Z@1#sG*; pooling=true; Max Pool Size=200;Connect Timeout=0"></add>-->
+    <!--<add key="ConnectionStringLocalDL" connectionString="Database=HSRPDL01;Server=180.151.100.245;UID=hsrpdl01app;PWD=Z@1#sG*; pooling=true; Max Pool Size=200;Connect Timeout=0" providerName="System.Data.SqlClient" />
+    <add key="ConnectionString" value="Database=HSRPAP;Server=43.242.124.207;UID=hsrptest;PWD=hsrptest@)!%; pooling=true; Max Pool Size=200;Connect Timeout=0"></add>-->
+    <add key="TGpathx" value="D:\ERPHSRPLog\" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>

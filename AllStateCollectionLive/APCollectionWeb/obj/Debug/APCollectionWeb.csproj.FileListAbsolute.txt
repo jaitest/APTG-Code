@@ -1,0 +1,145 @@
+D:\Abhishek\Projects\HSRP\APCollectionWeb\APCollectionWeb\bin\APCollectionWeb.dll
+D:\Abhishek\Projects\HSRP\APCollectionWeb\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\Abhishek\Projects\HSRP\APCollectionWeb\APCollectionWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\Abhishek\Projects\HSRP\APCollectionWeb\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\Abhishek\Projects\HSRP\APCollectionWeb\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\Abhishek\Projects\ERP\1-4-14\APCollectionWeb\APCollectionWeb\bin\APCollectionWeb.dll
+D:\Abhishek\Projects\ERP\1-4-14\APCollectionWeb\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\Abhishek\Projects\ERP\1-4-14\APCollectionWeb\APCollectionWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\Abhishek\Projects\ERP\1-4-14\APCollectionWeb\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\Abhishek\Projects\ERP\1-4-14\APCollectionWeb\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\Abhishek\Projects\ERP\2-4-14\APCollectionWeb\bin\APCollectionWeb.dll
+D:\Abhishek\Projects\ERP\2-4-14\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\Abhishek\Projects\ERP\2-4-14\APCollectionWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\Abhishek\Projects\ERP\2-4-14\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\Abhishek\Projects\ERP\2-4-14\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+E:\ERP\WebService4All\12-4-14\APCollectionWeb\bin\APCollectionWeb.dll
+E:\ERP\WebService4All\12-4-14\APCollectionWeb\bin\APCollectionWeb.pdb
+E:\ERP\WebService4All\12-4-14\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+E:\ERP\WebService4All\12-4-14\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+E:\ERP\WebService4All\12-4-14\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+E:\ERP\WebService4All\21-Apr-14\APCollectionWeb\bin\APCollectionWeb.dll
+E:\ERP\WebService4All\21-Apr-14\APCollectionWeb\bin\APCollectionWeb.pdb
+E:\ERP\WebService4All\21-Apr-14\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+E:\ERP\WebService4All\21-Apr-14\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+E:\ERP\WebService4All\21-Apr-14\APCollectionWeb\obj\Debug\ResolveAssemblyReference.cache
+E:\ERP\WebService4All\WebCashCollection\APCollectionWeb\bin\APCollectionWeb.dll
+E:\ERP\WebService4All\WebCashCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+E:\ERP\WebService4All\WebCashCollection\APCollectionWeb\obj\Debug\ResolveAssemblyReference.cache
+E:\ERP\WebService4All\WebCashCollection\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+E:\ERP\WebService4All\WebCashCollection\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\ALL New Code5Nov\WebService4All\WebCashCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\ALL New Code5Nov\WebService4All\WebCashCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\ALL New Code5Nov\WebService4All\WebCashCollection\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\ALL New Code5Nov\WebService4All\WebCashCollection\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\ALL New Code5Nov\WebService4All\WebCashCollection11Nov\APCollectionWeb\bin\APCollectionWeb.dll
+D:\ALL New Code5Nov\WebService4All\WebCashCollection11Nov\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\ALL New Code5Nov\WebService4All\WebCashCollection11Nov\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\ALL New Code5Nov\WebService4All\WebCashCollection11Nov\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\ALL New Code5Nov\WebService4All22NOV\WebCashCollection11Nov\APCollectionWeb\bin\APCollectionWeb.dll
+D:\ALL New Code5Nov\WebService4All22NOV\WebCashCollection11Nov\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\ALL New Code5Nov\WebService4All22NOV\WebCashCollection11Nov\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\ALL New Code5Nov\WebService4All22NOV\WebCashCollection11Nov\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\ALL New Code5Nov\WebService4All22NOV\WebCashCollection11Nov\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\ALL New Code5Nov\WebService4All29NOV\WebCashCollection11Nov\APCollectionWeb\bin\APCollectionWeb.dll
+D:\ALL New Code5Nov\WebService4All29NOV\WebCashCollection11Nov\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\ALL New Code5Nov\WebService4All29NOV\WebCashCollection11Nov\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\ALL New Code5Nov\WebService4All29NOV\WebCashCollection11Nov\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\ALL New Code5Nov\WebService4All29NOV\WebCashCollection11Nov\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\ALL New Code5Nov\WebService4All29NOV\WebCashCollection13Dec\APCollectionWeb\bin\APCollectionWeb.dll
+D:\ALL New Code5Nov\WebService4All29NOV\WebCashCollection13Dec\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\ALL New Code5Nov\WebService4All29NOV\WebCashCollection13Dec\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\ALL New Code5Nov\WebService4All29NOV\WebCashCollection13Dec\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\ALL New Code5Nov\WebService4All29NOV\WebCashCollection13Dec\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+C:\Project\WebService4All1\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Project\WebService4All1\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Project\WebService4All1\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+C:\Project\WebService4All1\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+C:\Project\WebService4All1\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+E:\Project\HSRP-TO-ERP-(30.03.2015)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+E:\Project\HSRP-TO-ERP-(30.03.2015)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+E:\Project\HSRP-TO-ERP-(30.03.2015)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+E:\Project\HSRP-TO-ERP-(30.03.2015)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\bin\Ionic.Zip.Reduced.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\bin\Ionic.Zip.Reduced.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\New folder (21)\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+C:\Users\AnshulGupta\Desktop\New folder (21)\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Users\AnshulGupta\Desktop\New folder (21)\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\New folder (21)\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+C:\Users\AnshulGupta\Desktop\New folder (21)\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+C:\Users\AnshulGupta\Desktop\New folder (21)\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.dll
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.pdb

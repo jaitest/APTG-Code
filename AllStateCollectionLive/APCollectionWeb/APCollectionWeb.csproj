@@ -1,0 +1,985 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EAC3BE6A-6CC5-49BD-AA49-26C633639E9D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APCollectionWeb</RootNamespace>
+    <AssemblyName>APCollectionWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>C:\Users\ITH\Desktop\Downloadfiles\Download_Files\Bin\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="APCollection.aspx" />
+    <Content Include="APProductionsheet.aspx" />
+    <Content Include="APRejectionProcess.aspx" />
+    <Content Include="APUpdateVehicleRegnoInHsrprecords.aspx" />
+    <Content Include="BiharCollection.aspx" />
+    <Content Include="BRProductionSheet.aspx" />
+    <Content Include="BRRejectionProcess.aspx" />
+    <Content Include="Downloadlogfile.aspx" />
+    <Content Include="APVehicleRegno.aspx" />
+    <Content Include="GetAPRegno.aspx" />
+    <Content Include="GetTGRegno.aspx" />
+    <Content Include="GetTGUpdatedCat.aspx" />
+    <Content Include="HPProductionsheet.aspx" />
+    <Content Include="HPRejectionProcess.aspx" />
+    <Content Include="HRCollection.aspx" />
+    <Content Include="HRCollectionAC.aspx" />
+    <Content Include="HRProductionsheet.aspx" />
+    <Content Include="HRRejectionProcess.aspx" />
+    <None Include="Service References\APService\HSRPAuthorizationService.wsdl" />
+    <None Include="Service References\TgS\HSRPAuthorizationService.disco" />
+    <None Include="Service References\TgS\configuration91.svcinfo" />
+    <None Include="Service References\TgS\configuration.svcinfo" />
+    <None Include="Service References\TgS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\APService\HSRPAuthorizationService.disco" />
+    <None Include="Service References\APService\configuration91.svcinfo" />
+    <None Include="Service References\APService\configuration.svcinfo" />
+    <None Include="Service References\APService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="TGCollection.aspx" />
+    <Content Include="TGProductionsheet.aspx" />
+    <Content Include="TGRejectionProcess.aspx" />
+    <Content Include="UKCollection.aspx" />
+    <Content Include="HPCollection.aspx" />
+    <Content Include="UKProductionsheet.aspx" />
+    <Content Include="UKRejectionProcess.aspx" />
+    <None Include="Service References\TgS\HSRPAuthorizationService.wsdl" />
+    <None Include="Web References\aptransport\HSRPAuthorizationService.disco" />
+    <None Include="Web References\APWebreference\hsrpauthorizationservice.wsdl" />
+    <None Include="Web References\APWebreference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\GetTgUpdatedCat\HSRPAuthorizationService.disco" />
+    <None Include="Web References\APWebreference\hsrpauthorizationservice.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APCollection.aspx.cs">
+      <DependentUpon>APCollection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="APCollection.aspx.designer.cs">
+      <DependentUpon>APCollection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="APProductionsheet.aspx.cs">
+      <DependentUpon>APProductionsheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="APProductionsheet.aspx.designer.cs">
+      <DependentUpon>APProductionsheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="APRejectionProcess.aspx.cs">
+      <DependentUpon>APRejectionProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="APRejectionProcess.aspx.designer.cs">
+      <DependentUpon>APRejectionProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="APUpdateVehicleRegnoInHsrprecords.aspx.cs">
+      <DependentUpon>APUpdateVehicleRegnoInHsrprecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="APUpdateVehicleRegnoInHsrprecords.aspx.designer.cs">
+      <DependentUpon>APUpdateVehicleRegnoInHsrprecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BiharCollection.aspx.cs">
+      <DependentUpon>BiharCollection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BiharCollection.aspx.designer.cs">
+      <DependentUpon>BiharCollection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BRProductionSheet.aspx.cs">
+      <DependentUpon>BRProductionSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BRProductionSheet.aspx.designer.cs">
+      <DependentUpon>BRProductionSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BRRejectionProcess.aspx.cs">
+      <DependentUpon>BRRejectionProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BRRejectionProcess.aspx.designer.cs">
+      <DependentUpon>BRRejectionProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Downloadlogfile.aspx.cs">
+      <DependentUpon>Downloadlogfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Downloadlogfile.aspx.designer.cs">
+      <DependentUpon>Downloadlogfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="APVehicleRegno.aspx.cs">
+      <DependentUpon>APVehicleRegno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="APVehicleRegno.aspx.designer.cs">
+      <DependentUpon>APVehicleRegno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetAPRegno.aspx.cs">
+      <DependentUpon>GetAPRegno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetAPRegno.aspx.designer.cs">
+      <DependentUpon>GetAPRegno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetTGRegno.aspx.cs">
+      <DependentUpon>GetTGRegno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetTGRegno.aspx.designer.cs">
+      <DependentUpon>GetTGRegno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetTGUpdatedCat.aspx.cs">
+      <DependentUpon>GetTGUpdatedCat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetTGUpdatedCat.aspx.designer.cs">
+      <DependentUpon>GetTGUpdatedCat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HPProductionsheet.aspx.cs">
+      <DependentUpon>HPProductionsheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HPProductionsheet.aspx.designer.cs">
+      <DependentUpon>HPProductionsheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HPRejectionProcess.aspx.cs">
+      <DependentUpon>HPRejectionProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HPRejectionProcess.aspx.designer.cs">
+      <DependentUpon>HPRejectionProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRCollection.aspx.cs">
+      <DependentUpon>HRCollection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRCollection.aspx.designer.cs">
+      <DependentUpon>HRCollection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRCollectionAC.aspx.cs">
+      <DependentUpon>HRCollectionAC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRCollectionAC.aspx.designer.cs">
+      <DependentUpon>HRCollectionAC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRProductionsheet.aspx.cs">
+      <DependentUpon>HRProductionsheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRProductionsheet.aspx.designer.cs">
+      <DependentUpon>HRProductionsheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRRejectionProcess.aspx.cs">
+      <DependentUpon>HRRejectionProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRRejectionProcess.aspx.designer.cs">
+      <DependentUpon>HRRejectionProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\APService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TgS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TGCollection.aspx.cs">
+      <DependentUpon>TGCollection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TGCollection.aspx.designer.cs">
+      <DependentUpon>TGCollection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TGProductionsheet.aspx.cs">
+      <DependentUpon>TGProductionsheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TGProductionsheet.aspx.designer.cs">
+      <DependentUpon>TGProductionsheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TGRejectionProcess.aspx.cs">
+      <DependentUpon>TGRejectionProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TGRejectionProcess.aspx.designer.cs">
+      <DependentUpon>TGRejectionProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UKCollection.aspx.cs">
+      <DependentUpon>UKCollection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UKCollection.aspx.designer.cs">
+      <DependentUpon>UKCollection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HPCollection.aspx.cs">
+      <DependentUpon>HPCollection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HPCollection.aspx.designer.cs">
+      <DependentUpon>HPCollection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UKProductionsheet.aspx.cs">
+      <DependentUpon>UKProductionsheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UKProductionsheet.aspx.designer.cs">
+      <DependentUpon>UKProductionsheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UKRejectionProcess.aspx.cs">
+      <DependentUpon>UKRejectionProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UKRejectionProcess.aspx.designer.cs">
+      <DependentUpon>UKRejectionProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="Web References\aptransport\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\APWebreference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BankDepositRequestWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BankDepositRequestWS_BR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BankDepositRequestWS_DL1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BankDepositRequestWS_HP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BankDepositRequestWS_HR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BankDepositRequestWS_TG\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BankDepositRequestWS_UK\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GetTgUpdatedCat\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RejectionProcess_AP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RejectionProcess_BR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RejectionProcess_DL\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RejectionProcess_HP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RejectionProcess_HR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RejectionProcess_TG\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RejectionProcess_UK\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReferenceNewBR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReference_BR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReference_Delhi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReference_HP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReference_HR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReference_MP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReference_TG\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReference_UK\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://180.151.100.196:7057/RTL/WS/Rosmerta%2520HSRP%2520Ventures%2520%28P%29%2520Ltd/Page/BankDepositRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BankDepositRequestWS_DL1\</RelPath>
+      <UpdateFromURL>http://180.151.100.196:7057/RTL/WS/Rosmerta%2520HSRP%2520Ventures%2520%28P%29%2520Ltd/Page/BankDepositRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_BankDepositRequestWS_DL1_BankDepositRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.196:7057/RTL/WS/Rosmerta%2520HSRP%2520Ventures%2520%28P%29%2520Ltd/Page/RejectionRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RejectionProcess_DL\</RelPath>
+      <UpdateFromURL>http://180.151.100.196:7057/RTL/WS/Rosmerta%2520HSRP%2520Ventures%2520%28P%29%2520Ltd/Page/RejectionRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_RejectionProcess_DL_RejectionRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.196:7057/RTL/WS/Rosmerta%2520HSRP%2520Ventures%2520%28P%29%2520Ltd/Page/SalesRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference_Delhi\</RelPath>
+      <UpdateFromURL>http://180.151.100.196:7057/RTL/WS/Rosmerta%2520HSRP%2520Ventures%2520%28P%29%2520Ltd/Page/SalesRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_WebReference_Delhi_SalesRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520AP/Page/BankDepositRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BankDepositRequestWS\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520AP/Page/BankDepositRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_BankDepositRequestWS_BankDepositRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520AP/Page/RejectionRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RejectionProcess_AP\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520AP/Page/RejectionRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_RejectionProcess_AP_RejectionRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520AP/Page/SalesRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520AP/Page/SalesRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_WebReference_SalesRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520TG/Page/BankDepositRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BankDepositRequestWS_TG\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520TG/Page/BankDepositRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_BankDepositRequestWS_TG_BankDepositRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520TG/Page/RejectionRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RejectionProcess_TG\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520TG/Page/RejectionRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_RejectionProcess_TG_RejectionRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520TG/Page/SalesRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference_TG\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Auto%2520Tech%2520Pvt.%2520Ltd.%2520TG/Page/SalesRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_WebReference_TG_SalesRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7077/USS/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/SalesRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReferenceNewBR\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7077/USS/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/SalesRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_WebReferenceNewBR_SalesRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.67:7057/LinkPoint/WS/Link%2520Point%2520Infra%2520Pvt.%2520Ltd.%2520MP/Page/SalesRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference_MP\</RelPath>
+      <UpdateFromURL>http://180.151.100.67:7057/LinkPoint/WS/Link%2520Point%2520Infra%2520Pvt.%2520Ltd.%2520MP/Page/SalesRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_WebReference_MP_SalesRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520HSRP%2520Pvt.%2520Ltd.-UK/Page/BankDepositRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BankDepositRequestWS_UK\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520HSRP%2520Pvt.%2520Ltd.-UK/Page/BankDepositRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_BankDepositRequestWS_UK_BankDepositRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520HSRP%2520Pvt.%2520Ltd.-UK/Page/RejectionRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RejectionProcess_UK\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520HSRP%2520Pvt.%2520Ltd.-UK/Page/RejectionRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_RejectionProcess_UK_RejectionRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520HSRP%2520Pvt.%2520Ltd.-UK/Page/SalesRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference_UK\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520HSRP%2520Pvt.%2520Ltd.-UK/Page/SalesRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_WebReference_UK_SalesRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Reg%2520Plate%2520P%2520Ltd.%2520HR/Page/BankDepositRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BankDepositRequestWS_HR\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Reg%2520Plate%2520P%2520Ltd.%2520HR/Page/BankDepositRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_BankDepositRequestWS_HR_BankDepositRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Reg%2520Plate%2520P%2520Ltd.%2520HR/Page/RejectionRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RejectionProcess_HR\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Reg%2520Plate%2520P%2520Ltd.%2520HR/Page/RejectionRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_RejectionProcess_HR_RejectionRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Reg%2520Plate%2520P%2520Ltd.%2520HR/Page/SalesRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference_HR\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Reg%2520Plate%2520P%2520Ltd.%2520HR/Page/SalesRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_WebReference_HR_SalesRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Ventures%2520P.%2520Ltd.-HP/Page/BankDepositRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BankDepositRequestWS_HP\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Ventures%2520P.%2520Ltd.-HP/Page/BankDepositRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_BankDepositRequestWS_HP_BankDepositRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Ventures%2520P.%2520Ltd.-HP/Page/RejectionRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RejectionProcess_HP\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Ventures%2520P.%2520Ltd.-HP/Page/RejectionRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_RejectionProcess_HP_RejectionRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Ventures%2520P.%2520Ltd.-HP/Page/SalesRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference_HP\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Link%2520Utsav%2520Ventures%2520P.%2520Ltd.-HP/Page/SalesRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_WebReference_HP_SalesRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/BankDepositRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BankDepositRequestWS_BR\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/BankDepositRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_BankDepositRequestWS_BR_BankDepositRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/RejectionRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RejectionProcess_BR\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/RejectionRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_RejectionProcess_BR_RejectionRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7057/LinkPoint/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/SalesRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReference_BR\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7057/LinkPoint/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/SalesRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_WebReference_BR_SalesRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://aptransport.in/apesevawebsrv/HSRPAuthorizationService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\aptransport\</RelPath>
+      <UpdateFromURL>https://aptransport.in/apesevawebsrv/HSRPAuthorizationService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_aptransport_HSRPAuthorizationService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://aptransport.in/aprtawebsrv/hsrpauthorizationservice.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\APWebreference\</RelPath>
+      <UpdateFromURL>https://aptransport.in/aprtawebsrv/hsrpauthorizationservice.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_APWebreference_HSRPAuthorizationService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://aptransport.in/tgesevawebsrv/HSRPAuthorizationService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GetTgUpdatedCat\</RelPath>
+      <UpdateFromURL>https://aptransport.in/tgesevawebsrv/HSRPAuthorizationService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_GetTgUpdatedCat_HSRPAuthorizationService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\BankDepositRequestWS\BankDepositRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\aptransport\HSRPAuthorizationService.wsdl" />
+    <Content Include="Web References\aptransport\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\BankDepositRequestWS\BankDepositRequestWS.wsdl" />
+    <None Include="Web References\BankDepositRequestWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\BankDepositRequestWS_BR\BankDepositRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\BankDepositRequestWS_BR\BankDepositRequestWS.wsdl" />
+    <None Include="Web References\BankDepositRequestWS_BR\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\BankDepositRequestWS_DL1\BankDepositRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\BankDepositRequestWS_DL1\BankDepositRequestWS.wsdl" />
+    <None Include="Web References\BankDepositRequestWS_DL1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\BankDepositRequestWS_HP\BankDepositRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\BankDepositRequestWS_HP\BankDepositRequestWS.wsdl" />
+    <None Include="Web References\BankDepositRequestWS_HP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\BankDepositRequestWS_HR\BankDepositRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\BankDepositRequestWS_HR\BankDepositRequestWS.wsdl" />
+    <None Include="Web References\BankDepositRequestWS_HR\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\BankDepositRequestWS_TG\BankDepositRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\BankDepositRequestWS_TG\BankDepositRequestWS.wsdl" />
+    <None Include="Web References\BankDepositRequestWS_TG\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\BankDepositRequestWS_UK\BankDepositRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\BankDepositRequestWS_UK\BankDepositRequestWS.wsdl" />
+    <None Include="Web References\BankDepositRequestWS_UK\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\GetTgUpdatedCat\HSRPAuthorizationService.wsdl" />
+    <Content Include="Web References\GetTgUpdatedCat\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\RejectionProcess_HR\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\RejectionProcess_HR\RejectionRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\RejectionProcess_AP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\RejectionProcess_AP\RejectionRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\RejectionProcess_AP\RejectionRequestWS.wsdl" />
+    <None Include="Web References\RejectionProcess_BR\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\RejectionProcess_BR\RejectionRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\RejectionProcess_BR\RejectionRequestWS.wsdl" />
+    <None Include="Web References\RejectionProcess_HP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\RejectionProcess_HP\RejectionRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\RejectionProcess_DL\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\RejectionProcess_DL\RejectionRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\RejectionProcess_DL\RejectionRequestWS.wsdl" />
+    <None Include="Web References\RejectionProcess_HP\RejectionRequestWS.wsdl" />
+    <None Include="Web References\RejectionProcess_HR\RejectionRequestWS.wsdl" />
+    <None Include="Web References\RejectionProcess_UK\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\RejectionProcess_UK\RejectionRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\RejectionProcess_TG\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\RejectionProcess_TG\RejectionRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\RejectionProcess_TG\RejectionRequestWS.wsdl" />
+    <None Include="Web References\RejectionProcess_UK\RejectionRequestWS.wsdl" />
+    <None Include="Web References\WebReferenceNewBR\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\WebReferenceNewBR\SalesRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\WebReferenceNewBR\SalesRequestWS.wsdl" />
+    <None Include="Web References\WebReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReference\SalesRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReference\SalesRequestWS.wsdl" />
+    <None Include="Web References\WebReference_BR\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReference_BR\SalesRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReference_BR\SalesRequestWS.wsdl" />
+    <None Include="Web References\WebReference_Delhi\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReference_Delhi\SalesRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReference_Delhi\SalesRequestWS.wsdl" />
+    <None Include="Web References\WebReference_HP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReference_HP\SalesRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReference_HP\SalesRequestWS.wsdl" />
+    <None Include="Web References\WebReference_HR\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReference_HR\SalesRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReference_HR\SalesRequestWS.wsdl" />
+    <None Include="Web References\WebReference_MP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReference_MP\SalesRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReference_MP\SalesRequestWS.wsdl" />
+    <None Include="Web References\WebReference_TG\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReference_TG\SalesRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReference_TG\SalesRequestWS.wsdl" />
+    <None Include="Web References\WebReference_UK\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReference_UK\SalesRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReference_UK\SalesRequestWS.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\APService\" />
+    <WCFMetadataStorage Include="Service References\TgS\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53880</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

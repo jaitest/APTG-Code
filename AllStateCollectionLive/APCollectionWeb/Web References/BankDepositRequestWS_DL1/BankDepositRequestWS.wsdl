@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/page/bankdepositrequestws" targetNamespace="urn:microsoft-dynamics-schemas/page/bankdepositrequestws" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/page/bankdepositrequestws" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:simpleType name="Transaction_Status">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Open" />
+          <xsd:enumeration value="Posted" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="BankDepositRequestWS">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Key" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="TransactionID" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Deposit_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Bank_Account_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Bank_Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Branch_Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Deposit_Amount" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Deposit_By" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="StateID" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Central_Warehouse_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Embosssing_Center_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Affixation_Center_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RTO_Collection_Center_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Collection_Agent_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Zone_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="UserID" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="CurrentDate" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Bank_Slip_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Remarks" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AccountNo" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Transaction_Status" type="tns:Transaction_Status" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Bank_Receipt_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Bank_Ledger_Entry_No" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Is_not_Reconcile" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Reconcile_Amount" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Collection_Entry_Posted" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Collection_Entry_No" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Responsibility_Center" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BankDepositRequestWS_List">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="unbounded" name="BankDepositRequestWS" type="tns:BankDepositRequestWS" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="BankDepositRequestWS_Fields">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="TransactionID" />
+          <xsd:enumeration value="Deposit_Date" />
+          <xsd:enumeration value="NAV_Bank_Account_Code" />
+          <xsd:enumeration value="Bank_Name" />
+          <xsd:enumeration value="Branch_Name" />
+          <xsd:enumeration value="Deposit_Amount" />
+          <xsd:enumeration value="Deposit_By" />
+          <xsd:enumeration value="StateID" />
+          <xsd:enumeration value="Central_Warehouse_Code" />
+          <xsd:enumeration value="Embosssing_Center_Code" />
+          <xsd:enumeration value="Affixation_Center_Code" />
+          <xsd:enumeration value="RTO_Collection_Center_Code" />
+          <xsd:enumeration value="Collection_Agent_Code" />
+          <xsd:enumeration value="Zone_Code" />
+          <xsd:enumeration value="UserID" />
+          <xsd:enumeration value="CurrentDate" />
+          <xsd:enumeration value="Bank_Slip_No" />
+          <xsd:enumeration value="Remarks" />
+          <xsd:enumeration value="AccountNo" />
+          <xsd:enumeration value="Transaction_Status" />
+          <xsd:enumeration value="NAV_Bank_Receipt_No" />
+          <xsd:enumeration value="Bank_Ledger_Entry_No" />
+          <xsd:enumeration value="Is_not_Reconcile" />
+          <xsd:enumeration value="Reconcile_Amount" />
+          <xsd:enumeration value="Collection_Entry_Posted" />
+          <xsd:enumeration value="Collection_Entry_No" />
+          <xsd:enumeration value="Responsibility_Center" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="BankDepositRequestWS_Filter">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Field" type="tns:BankDepositRequestWS_Fields" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Criteria" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Read">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TransactionID" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Read_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="BankDepositRequestWS" type="tns:BankDepositRequestWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="recId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="BankDepositRequestWS" type="tns:BankDepositRequestWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="unbounded" name="filter" type="tns:BankDepositRequestWS_Filter" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="bookmarkKey" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="setSize" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="ReadMultiple_Result" type="tns:BankDepositRequestWS_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="IsUpdated_Result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="GetRecIdFromKey_Result" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Create">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="BankDepositRequestWS" type="tns:BankDepositRequestWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Create_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="BankDepositRequestWS" type="tns:BankDepositRequestWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="BankDepositRequestWS_List" type="tns:BankDepositRequestWS_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="BankDepositRequestWS_List" type="tns:BankDepositRequestWS_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="Read">
+    <part name="parameters" element="tns:Read" />
+  </message>
+  <message name="Read_Result">
+    <part name="parameters" element="tns:Read_Result" />
+  </message>
+  <message name="ReadByRecId">
+    <part name="parameters" element="tns:ReadByRecId" />
+  </message>
+  <message name="ReadByRecId_Result">
+    <part name="parameters" element="tns:ReadByRecId_Result" />
+  </message>
+  <message name="ReadMultiple">
+    <part name="parameters" element="tns:ReadMultiple" />
+  </message>
+  <message name="ReadMultiple_Result">
+    <part name="parameters" element="tns:ReadMultiple_Result" />
+  </message>
+  <message name="IsUpdated">
+    <part name="parameters" element="tns:IsUpdated" />
+  </message>
+  <message name="IsUpdated_Result">
+    <part name="parameters" element="tns:IsUpdated_Result" />
+  </message>
+  <message name="GetRecIdFromKey">
+    <part name="parameters" element="tns:GetRecIdFromKey" />
+  </message>
+  <message name="GetRecIdFromKey_Result">
+    <part name="parameters" element="tns:GetRecIdFromKey_Result" />
+  </message>
+  <message name="Create">
+    <part name="parameters" element="tns:Create" />
+  </message>
+  <message name="Create_Result">
+    <part name="parameters" element="tns:Create_Result" />
+  </message>
+  <message name="CreateMultiple">
+    <part name="parameters" element="tns:CreateMultiple" />
+  </message>
+  <message name="CreateMultiple_Result">
+    <part name="parameters" element="tns:CreateMultiple_Result" />
+  </message>
+  <portType name="BankDepositRequestWS_Port">
+    <operation name="Read">
+      <input name="Read" message="tns:Read" />
+      <output name="Read_Result" message="tns:Read_Result" />
+    </operation>
+    <operation name="ReadByRecId">
+      <input name="ReadByRecId" message="tns:ReadByRecId" />
+      <output name="ReadByRecId_Result" message="tns:ReadByRecId_Result" />
+    </operation>
+    <operation name="ReadMultiple">
+      <input name="ReadMultiple" message="tns:ReadMultiple" />
+      <output name="ReadMultiple_Result" message="tns:ReadMultiple_Result" />
+    </operation>
+    <operation name="IsUpdated">
+      <input name="IsUpdated" message="tns:IsUpdated" />
+      <output name="IsUpdated_Result" message="tns:IsUpdated_Result" />
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <input name="GetRecIdFromKey" message="tns:GetRecIdFromKey" />
+      <output name="GetRecIdFromKey_Result" message="tns:GetRecIdFromKey_Result" />
+    </operation>
+    <operation name="Create">
+      <input name="Create" message="tns:Create" />
+      <output name="Create_Result" message="tns:Create_Result" />
+    </operation>
+    <operation name="CreateMultiple">
+      <input name="CreateMultiple" message="tns:CreateMultiple" />
+      <output name="CreateMultiple_Result" message="tns:CreateMultiple_Result" />
+    </operation>
+  </portType>
+  <binding name="BankDepositRequestWS_Binding" type="tns:BankDepositRequestWS_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="Read">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/bankdepositrequestws:Read" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Read">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Read_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadByRecId">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/bankdepositrequestws:ReadByRecId" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadByRecId">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadByRecId_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/bankdepositrequestws:ReadMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="IsUpdated">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/bankdepositrequestws:IsUpdated" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="IsUpdated">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="IsUpdated_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/bankdepositrequestws:GetRecIdFromKey" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetRecIdFromKey">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetRecIdFromKey_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Create">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/bankdepositrequestws:Create" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Create">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Create_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/bankdepositrequestws:CreateMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="BankDepositRequestWS_Service">
+    <port name="BankDepositRequestWS_Port" binding="tns:BankDepositRequestWS_Binding">
+      <address location="http://180.151.100.196:7057/RTL/WS/Rosmerta%20HSRP%20Ventures%20(P)%20Ltd/Page/BankDepositRequestWS" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

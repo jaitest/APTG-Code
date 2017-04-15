@@ -1,0 +1,55 @@
+C:\Users\user000\Desktop\New Mcpg 4.5 project\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll
+C:\Users\user000\Desktop\New Mcpg 4.5 project\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.pdb
+C:\Users\user000\Desktop\New Mcpg 4.5 project\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.dll
+C:\Users\user000\Desktop\New Mcpg 4.5 project\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.pdb
+C:\Users\user000\Desktop\New Mcpg 4.5 project\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.csprojResolveAssemblyReference.cache
+E:\Projects\MCPG_NonSeamless_4.5\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll.config
+E:\Projects\MCPG_NonSeamless_4.5\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll
+E:\Projects\MCPG_NonSeamless_4.5\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.pdb
+E:\Projects\MCPG_NonSeamless_4.5\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.dll
+E:\Projects\MCPG_NonSeamless_4.5\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.pdb
+E:\Projects\MCPG_NonSeamless_4.5\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.csprojResolveAssemblyReference.cache
+F:\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll.config
+F:\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll
+F:\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.pdb
+F:\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.csprojResolveAssemblyReference.cache
+F:\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.dll
+F:\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.pdb
+E:\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll.config
+E:\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll
+E:\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.pdb
+E:\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.csprojResolveAssemblyReference.cache
+E:\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.dll
+E:\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.pdb
+C:\Users\JoginderSingh\Desktop\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll.config
+C:\Users\JoginderSingh\Desktop\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll
+C:\Users\JoginderSingh\Desktop\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.pdb
+C:\Users\JoginderSingh\Desktop\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.csprojResolveAssemblyReference.cache
+C:\Users\JoginderSingh\Desktop\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.dll
+C:\Users\JoginderSingh\Desktop\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.pdb
+E:\IntegrationKIt4.5\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll.config
+E:\IntegrationKIt4.5\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll
+E:\IntegrationKIt4.5\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.pdb
+E:\IntegrationKIt4.5\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.csprojResolveAssemblyReference.cache
+E:\IntegrationKIt4.5\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.dll
+E:\IntegrationKIt4.5\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.pdb
+E:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll.config
+E:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll
+E:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.pdb
+E:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.csprojResolveAssemblyReference.cache
+E:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.dll
+E:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.pdb
+C:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll.config
+C:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll
+C:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.pdb
+C:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.csprojResolveAssemblyReference.cache
+C:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.dll
+C:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.pdb
+C:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\DotNetIntegrationKit.dll
+C:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\TPSLAESSecurityCipher.dll
+D:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll.config
+D:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.dll
+D:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\bin\IntegrationKIt4.5.pdb
+D:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.csprojResolveAssemblyReference.cache
+D:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.dll
+D:\Projects\TGOnlineCollection\IntegrationKIt4.5\IntegrationKIt4.5\obj\Release\IntegrationKIt4.5.pdb
