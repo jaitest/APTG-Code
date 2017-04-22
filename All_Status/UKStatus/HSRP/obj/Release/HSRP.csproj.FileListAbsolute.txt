@@ -1,0 +1,6 @@
+C:\Project\AllStatusWebsite(24-06-2015)LIVE\UK\UKStatus\HSRP\bin\HSRP.dll.config
+C:\Project\AllStatusWebsite(24-06-2015)LIVE\UK\UKStatus\HSRP\bin\HSRP.dll
+C:\Project\AllStatusWebsite(24-06-2015)LIVE\UK\UKStatus\HSRP\bin\HSRP.pdb
+C:\Project\AllStatusWebsite(24-06-2015)LIVE\UK\UKStatus\HSRP\obj\Release\HSRP.csprojResolveAssemblyReference.cache
+C:\Project\AllStatusWebsite(24-06-2015)LIVE\UK\UKStatus\HSRP\obj\Release\HSRP.dll
+C:\Project\AllStatusWebsite(24-06-2015)LIVE\UK\UKStatus\HSRP\obj\Release\HSRP.pdb

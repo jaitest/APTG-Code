@@ -137,9 +137,3 @@ C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\A
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.dll
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
-C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
-C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
-C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
-C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.csprojResolveAssemblyReference.cache
-C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.dll
-C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Debug\APCollectionWeb.pdb
