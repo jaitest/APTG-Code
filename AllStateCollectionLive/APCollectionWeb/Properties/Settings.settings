@@ -83,5 +83,11 @@
     <Setting Name="APCollectionWeb_WebReferenceNewBR_SalesRequestWS_Service" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://180.151.100.66:7077/USS/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/SalesRequestWS</Value>
     </Setting>
+    <Setting Name="APCollectionWeb_RejectionRequestUSS_New_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7077/USS/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/RejectionRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_RejectionProcess_Uss_BR_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7077/USS/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/RejectionRequestWS</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

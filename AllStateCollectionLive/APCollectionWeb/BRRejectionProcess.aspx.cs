@@ -23,14 +23,15 @@ namespace APCollectionWeb
 
             try
             {
-                APCollectionWeb.RejectionProcess_BR.RejectionRequestWS_Service service = new APCollectionWeb.RejectionProcess_BR.RejectionRequestWS_Service();
+                APCollectionWeb.RejectionProcess_Uss_BR.RejectionRequestWS_Service service = new APCollectionWeb.RejectionProcess_Uss_BR.RejectionRequestWS_Service();
                 service.UseDefaultCredentials = false;
                 //service.PreAuthenticate = true;          
                 // SalesRequestWS Cust1 = new SalesRequestWS();
 
-                service.Credentials = new System.Net.NetworkCredential("erpwebservice@erp.com", "E@rpweb");
+                //service.Credentials = new System.Net.NetworkCredential("erpwebservice@erp.com", "E@rpweb");
+                service.Credentials = new System.Net.NetworkCredential("Administrator@erp.com", "ewq@)!^98");
 
-                APCollectionWeb.RejectionProcess_BR.RejectionRequestWS Cust;
+                APCollectionWeb.RejectionProcess_Uss_BR.RejectionRequestWS Cust;
                 int count = 0;
                 lblmsg.Text = "There is no record.... BR";
                 string query = "select entrytype,entryno,convert(varchar(15),entrydate,106) as entrydate1 ,originalrequestid,rejectiontype,frontlasercode,rearlasercode,replacementrequestid,embosssingcentercode,affixationcentercode,left(reasonforrejection,25)as 'reasonforrejection',left(operatorname,25) as 'operatorname',responsibilitycenter,rtolocationid from rejectplatEntry where hsrp_stateid=1 and entrydate >='2014/04/24 00:00:00' and sendtoERP is null";
@@ -43,7 +44,7 @@ namespace APCollectionWeb
                     {
                         // utils.ExecNonQuery("update hsrprecords set sendtoerp =1 where hsrprecordid ='" + dt.Rows[i]["hsrprecordid"].ToString() + "' ", cnnLocal); 
 
-                        Cust = new APCollectionWeb.RejectionProcess_BR.RejectionRequestWS();
+                        Cust = new APCollectionWeb.RejectionProcess_Uss_BR.RejectionRequestWS();
                         // service.Create(ref Cust);
 
                         Cust.Entry_No = Convert.ToInt32(dt.Rows[i]["entryno"].ToString());
@@ -55,18 +56,18 @@ namespace APCollectionWeb
                         string rtype = dt.Rows[i]["rejectiontype"].ToString();
                         if (dt.Rows[i]["rejectiontype"].ToString() == "Both")
                         {
-                            Cust.Rejection_Type = APCollectionWeb.RejectionProcess_BR.Rejection_Type.Both;
+                            Cust.Rejection_Type = APCollectionWeb.RejectionProcess_Uss_BR.Rejection_Type.Both;
                             Cust.Front_Laser_Code = dt.Rows[i]["frontlasercode"].ToString();
                             Cust.Rear_Laser_Code = dt.Rows[i]["rearlasercode"].ToString();
                         }
                         else if (dt.Rows[i]["rejectiontype"].ToString() == "Front Plate")
                         {
-                            Cust.Rejection_Type = APCollectionWeb.RejectionProcess_BR.Rejection_Type.Front;
+                            Cust.Rejection_Type = APCollectionWeb.RejectionProcess_Uss_BR.Rejection_Type.Front;
                             Cust.Front_Laser_Code = dt.Rows[i]["frontlasercode"].ToString();
                         }
                         else if (dt.Rows[i]["rejectiontype"].ToString() == "Rear Plate")
                         {
-                            Cust.Rejection_Type = APCollectionWeb.RejectionProcess_BR.Rejection_Type.Rear;
+                            Cust.Rejection_Type = APCollectionWeb.RejectionProcess_Uss_BR.Rejection_Type.Rear;
                             Cust.Rear_Laser_Code = dt.Rows[i]["rearlasercode"].ToString();
                         }
 
@@ -74,13 +75,12 @@ namespace APCollectionWeb
 
                         if (dt.Rows[i]["EntryType"].ToString() == "Affixation")
                         {
-                            Cust.Entry_Type = APCollectionWeb.RejectionProcess_BR.Entry_Type.Affixation;
+                            Cust.Entry_Type = APCollectionWeb.RejectionProcess_Uss_BR.Entry_Type.Affixation;
                             Cust.Replacement_Request_ID = Convert.ToInt32(dt.Rows[i]["originalrequestid"].ToString());
-
                         }
                         else
                         {
-                            Cust.Entry_Type = APCollectionWeb.RejectionProcess_BR.Entry_Type.Embossing;
+                            Cust.Entry_Type = APCollectionWeb.RejectionProcess_Uss_BR.Entry_Type.Embossing;
                             Cust.Replacement_Request_ID = 0;
                         }
 

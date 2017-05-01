@@ -316,5 +316,27 @@ namespace APCollectionWeb.Properties {
                 return ((string)(this["APCollectionWeb_WebReferenceNewBR_SalesRequestWS_Service"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://180.151.100.66:7077/USS/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/Reje" +
+            "ctionRequestWS")]
+        public string APCollectionWeb_RejectionRequestUSS_New_RejectionRequestWS_Service {
+            get {
+                return ((string)(this["APCollectionWeb_RejectionRequestUSS_New_RejectionRequestWS_Service"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://180.151.100.66:7077/USS/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/Reje" +
+            "ctionRequestWS")]
+        public string APCollectionWeb_RejectionProcess_Uss_BR_RejectionRequestWS_Service {
+            get {
+                return ((string)(this["APCollectionWeb_RejectionProcess_Uss_BR_RejectionRequestWS_Service"]));
+            }
+        }
     }
 }

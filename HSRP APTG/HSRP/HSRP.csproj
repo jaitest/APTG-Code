@@ -611,7 +611,6 @@
     <Content Include="Transaction\dateTest.aspx" />
     <Content Include="Transaction\DispatchFromWareHouse.aspx" />
     <Content Include="Transaction\DownloadProductionWithDate_Pending.aspx" />
-    <Content Include="Transaction\EditCashCollectionBihar.aspx" />
     <Content Include="Transaction\InventoryChallanCreate.aspx" />
     <Content Include="Transaction\InventoryStatus1.aspx" />
     <Content Include="Transaction\Inventory_Stock.aspx" />
@@ -714,7 +713,6 @@
     <Content Include="Transaction\InventoryIssue.aspx" />
     <Content Include="Transaction\ViewHSRPExcel.aspx" />
     <Content Include="Transaction\ViewHSRPRecordsAdd.aspx" />
-    <Content Include="Transaction\ViewHSRPRecordsEdit.aspx" />
     <Content Include="Transaction\ViewInventory.aspx" />
     <Content Include="Transaction\ViewLaserCode.aspx" />
     <Content Include="Transaction\ViewLaserTransferInterState.aspx" />
@@ -4328,13 +4326,6 @@
     <Compile Include="Transaction\DownloadProductionWithDate_Pending.aspx.designer.cs">
       <DependentUpon>DownloadProductionWithDate_Pending.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\EditCashCollectionBihar.aspx.cs">
-      <DependentUpon>EditCashCollectionBihar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Transaction\EditCashCollectionBihar.aspx.designer.cs">
-      <DependentUpon>EditCashCollectionBihar.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Transaction\InventoryChallanCreate.aspx.cs">
       <DependentUpon>InventoryChallanCreate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -5200,13 +5191,6 @@
     </Compile>
     <Compile Include="Transaction\ViewHSRPRecordsAdd.aspx.designer.cs">
       <DependentUpon>ViewHSRPRecordsAdd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Transaction\ViewHSRPRecordsEdit.aspx.cs">
-      <DependentUpon>ViewHSRPRecordsEdit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Transaction\ViewHSRPRecordsEdit.aspx.designer.cs">
-      <DependentUpon>ViewHSRPRecordsEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Transaction\ViewInventory.aspx.cs">
       <DependentUpon>ViewInventory.aspx</DependentUpon>

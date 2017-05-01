@@ -917,7 +917,7 @@ namespace HSRP.EmbossingData
                                 }
                                 else
                                 {
-                                    smstiming = "10:00AM to 5:00 PM";
+                                    smstiming = "10:00 AM to 5:00 PM";
                                 }
 
 
@@ -933,15 +933,16 @@ namespace HSRP.EmbossingData
 
                                 else
                                 {
-                                    SMSTextap = "Your H.S.R.P. for " + reg_no + " is ready for Affixation, Please visit your H.S.R.P. center Between 2.00 PM - 5.30 PM for Affixation. HSRP Team";
-                                    //SMSTextap = "Your H.S.R.P. for " + reg_no + " is ready for Affixation, Please visit your H.S.R.P. center Between " + smstiming + " for Affixation. HSRP Team";
+                                    //SMSTextap = "Your H.S.R.P. for " + reg_no + " is ready for Affixation, Please visit your H.S.R.P. center Between 2.00 PM - 5.30 PM for Affixation. HSRP Team";
+                                    SMSTextap = "Your H.S.R.P. for " + reg_no + " is ready for Affixation, Please visit your H.S.R.P. center Between " + smstiming + " for Affixation. HSRP Team";
                                 }
 
 
                                 string SMSCheck = "Select top 1 HSRPRecordID from APSMSDetail where HSRPRecordID='" + strRecordId + "'";
                                 DataTable HSRPRecordID = Utils.GetDataTable(SMSCheck, CnnString);
                                 if (HSRPRecordID.Rows.Count == 0)
-                                {                                   
+                                {
+                                    
                                     sendURL = "http://103.16.101.52:8080/bulksms/bulksms?username=sse-aphsrp&password=aphsrp&type=0&dlr=1&destination=" + PhoneNumber + "&source=APHSRP&message=" + SMSTextap;
                                     HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(sendURL);
                                     myRequest.Method = "GET";

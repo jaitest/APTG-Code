@@ -36,13 +36,13 @@
             return false;
         }
 
-        if (document.getElementById("<%=txtRemarks.ClientID%>").value == "") {
+        if (document.getElementById("<%=ddlmessage.ClientID%>").value == "") {
             alert("Please Enter Remarks");
-            document.getElementById("<%=txtRemarks.ClientID%>").focus();
+            document.getElementById("<%=ddlmessage.ClientID%>").focus();
             return false;
         }
 
-        var message = document.getElementById("<%=txtRemarks.ClientID%>").value;
+        var message = document.getElementById("<%=ddlmessage.ClientID%>").value;
         var newMessage = new String('*', message.Length);
         
 
@@ -361,7 +361,27 @@
                                </tr>
                                  <tr>
                                 <td valign="middle" class="form_text" nowrap="nowrap">Remarks :<span class="alert">* </span></td> 
-                                <td valign="middle" class="form_text" nowrap="nowrap" colspan="3"> <asp:TextBox ID="txtRemarks" Width="622px" Height="125px" TextMode ="MultiLine" runat="server"></asp:TextBox> </td>
+                                <td valign="middle" class="form_text" nowrap="nowrap" colspan="3"> 
+                                    <asp:DropDownList ID="ddlmessage" runat="server" AutoPostBack="True"  ValidationGroup="v">
+                                                <asp:ListItem>--Select Remark Type--</asp:ListItem>
+                                                <asp:ListItem>Missing from Sealed Box</asp:ListItem>
+                                                <asp:ListItem>No Laser codes</asp:ListItem>
+                                                <asp:ListItem>No Hologram</asp:ListItem>
+                                        <asp:ListItem>Missing in Transit</asp:ListItem>
+                                        <asp:ListItem>Dameged in Transit</asp:ListItem>
+                                        <asp:ListItem>Wrongly Embossed</asp:ListItem>
+                                        <asp:ListItem>Missing at AFC</asp:ListItem>
+                                        <asp:ListItem>Damaged while affixation</asp:ListItem>
+                                        <asp:ListItem>Fadeout of Black Foil</asp:ListItem>
+                                        <asp:ListItem>Old Missing Plates</asp:ListItem>
+                                        <asp:ListItem>Fire Accident</asp:ListItem>
+                                        <asp:ListItem>Theaft Case</asp:ListItem>
+                                        <asp:ListItem>PR number changed after pushing data to HSRP Server</asp:ListItem>
+                                                
+                                            </asp:DropDownList>
+                                    <%--<asp:TextBox ID="txtRemarks" Width="622px" Height="125px" TextMode ="MultiLine" runat="server"></asp:TextBox> --%>
+
+                                </td>
                                 </tr> 
                     <tr>
                                 <td valign="middle" class="form_text" nowrap="nowrap">Operator Name :<span class="alert">* </span></td> 
@@ -382,8 +402,8 @@
                                 ValidationGroup="v"  />
 
                      <input type="button" onclick="javascript:parent.googlewin.close();" name="buttonClose" id="buttonClose" value="Close" class="button" /> 
-                    
-                    <input type="reset" class="button" value="Reset" />
+                    <asp:Button ID="btnreset" runat="server" Text="Reset" OnClick="btnreset_Click" />
+                    <%--<input type="reset" class="button" value="Reset" />--%>
                 </td> 
                     </tr>
                 </table>

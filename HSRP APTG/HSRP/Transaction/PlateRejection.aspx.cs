@@ -175,6 +175,13 @@ namespace HSRP.Master
                 return;
             }
 
+            if (ddlmessage.SelectedValue.ToString() == "--Select Remark Type--")
+            {
+                lblErrMess.Text = "";
+                lblErrMess.Text = "Please select Remark Type";
+                return;
+            }
+
 
             sqlstring = "select * from rejectplatEntry where hsrp_stateid='" + HSRPStateID + "' and (FrontLaserCode='" + lblFLNo.Text + "' or RearLaserCode='" + lblRLNo.Text + "')";
             DataTable dtnew = Utils.GetDataTable(sqlstring, CnnString);
@@ -236,10 +243,10 @@ namespace HSRP.Master
                 updateqry = "update hsrprecords set HSRP_Front_LaserCode=null,HSRP_Rear_LaserCode=null,RejectFlag='Y' where hsrp_stateid='" + HSRPStateID + "' and vehicleregno ='" + txtVehicleNo.Text + "'";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
-                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + txtRemarks.Text + "' where hsrp_stateid='" + HSRPStateID + "' and laserno in ('" + lblFLNo.Text + "','"+ lblRLNo.Text +"')";
+                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" +ddlmessage.SelectedValue.ToString() + "' where hsrp_stateid='" + HSRPStateID + "' and laserno in ('" + lblFLNo.Text + "','"+ lblRLNo.Text +"')";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
-                strquery3 = "insert into rejectplatEntry (EntryType,EntryDate,OriginalRequestID,RejectionType,FrontLaserCode,RearLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblFLNo.Text + "','" + lblRLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + txtRemarks.Text + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype .SelectedItem.Text+ "')";
+                strquery3 = "insert into rejectplatEntry (EntryType,EntryDate,OriginalRequestID,RejectionType,FrontLaserCode,RearLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblFLNo.Text + "','" + lblRLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + ddlmessage.SelectedValue.ToString() + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
                 int result = Utils.ExecNonQuery(strquery3, CnnString);
                 if (result > 0)
                 {
@@ -252,10 +259,10 @@ namespace HSRP.Master
                 updateqry = "update hsrprecords set HSRP_Front_LaserCode=null,RejectFlag='Y' where hsrp_stateid='" + HSRPStateID + "' and vehicleregno ='" + txtVehicleNo.Text + "'";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
-                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + txtRemarks.Text + "' where hsrp_stateid='" + HSRPStateID + "' and laserno ='" + lblFLNo.Text + "'";
+                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + ddlmessage.SelectedValue.ToString() + "' where hsrp_stateid='" + HSRPStateID + "' and laserno ='" + lblFLNo.Text + "'";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
-                strquery3 = "insert into rejectplatEntry (EntryType,EntryDate,OriginalRequestID,RejectionType,FrontLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblFLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + txtRemarks.Text + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
+                strquery3 = "insert into rejectplatEntry (EntryType,EntryDate,OriginalRequestID,RejectionType,FrontLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblFLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + ddlmessage.SelectedValue.ToString() + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
                 int result = Utils.ExecNonQuery(strquery3, CnnString);
                 if (result > 0)
                 {
@@ -268,10 +275,10 @@ namespace HSRP.Master
                 updateqry = "update hsrprecords set HSRP_Rear_LaserCode=null,RejectFlag='Y' where hsrp_stateid='" + HSRPStateID + "' and vehicleregno ='" + txtVehicleNo.Text + "'";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
-                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + txtRemarks.Text + "' where hsrp_stateid='" + HSRPStateID + "' and laserno ='" + lblRLNo.Text + "'";
+                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + ddlmessage.SelectedValue.ToString() + "' where hsrp_stateid='" + HSRPStateID + "' and laserno ='" + lblRLNo.Text + "'";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
-                strquery3 = "insert into rejectplatEntry (EntryType,EntryDate,OriginalRequestID,RejectionType,RearLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblRLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + txtRemarks.Text + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
+                strquery3 = "insert into rejectplatEntry (EntryType,EntryDate,OriginalRequestID,RejectionType,RearLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblRLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + ddlmessage.SelectedValue.ToString() + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
                 int result = Utils.ExecNonQuery(strquery3, CnnString);
                 if (result > 0)
                 {
@@ -285,10 +292,10 @@ namespace HSRP.Master
                 updateqry = "update hsrprecords set HSRP_Front_LaserCode=null,HSRP_Rear_LaserCode=null,RejectFlag='Y' where hsrp_stateid='" + HSRPStateID + "' and vehicleregno ='" + txtVehicleNo.Text + "'";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
-                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + txtRemarks.Text + "' where hsrp_stateid='" + HSRPStateID + "' and laserno in ('" + lblFLNo.Text + "','" + lblRLNo.Text + "')";
+                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + ddlmessage.SelectedValue.ToString() + "' where hsrp_stateid='" + HSRPStateID + "' and laserno in ('" + lblFLNo.Text + "','" + lblRLNo.Text + "')";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
-                strquery3 = "insert into rejectplatEntry (EntryType,EntryDate,OriginalRequestID,RejectionType,FrontLaserCode,RearLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblFLNo.Text + "','" + lblRLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + txtRemarks.Text + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
+                strquery3 = "insert into rejectplatEntry (EntryType,EntryDate,OriginalRequestID,RejectionType,FrontLaserCode,RearLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblFLNo.Text + "','" + lblRLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + ddlmessage.SelectedValue.ToString() + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
                 int result = Utils.ExecNonQuery(strquery3, CnnString);
                 if (result > 0)
                 {
@@ -323,14 +330,14 @@ namespace HSRP.Master
                 updateqry = "update hsrprecords set HSRP_Front_LaserCode=null,RejectFlag='Y' where hsrp_stateid='" + HSRPStateID + "' and vehicleregno ='" + txtVehicleNo.Text + "'";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
-                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + txtRemarks.Text + "' where hsrp_stateid='" + HSRPStateID + "' and laserno ='" + lblFLNo.Text + "'";
+                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + ddlmessage.SelectedValue.ToString() + "' where hsrp_stateid='" + HSRPStateID + "' and laserno ='" + lblFLNo.Text + "'";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
                 strquery2 = "select CHSRPRecordID from HSRPRecords_Rejct where hsrprecordid='" + Recordid + "'";
                 dt = Utils.GetDataTable(strquery2, CnnString);
                 string strRecordID = dt.Rows[0]["CHSRPRecordID"].ToString();
 
-                strquery3 = "insert into rejectplatEntry (ReplacementRequestID,EntryType,EntryDate,OriginalRequestID,RejectionType,FrontLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + strRecordID + "','" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblFLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + txtRemarks.Text + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
+                strquery3 = "insert into rejectplatEntry (ReplacementRequestID,EntryType,EntryDate,OriginalRequestID,RejectionType,FrontLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + strRecordID + "','" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblFLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + ddlmessage.SelectedValue.ToString() + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
                 int result = Utils.ExecNonQuery(strquery3, CnnString);
                 if (result > 0)
                 {
@@ -347,14 +354,14 @@ namespace HSRP.Master
                 updateqry = "update hsrprecords set HSRP_Rear_LaserCode=null,RejectFlag='Y' where hsrp_stateid='" + HSRPStateID + "' and vehicleregno ='" + txtVehicleNo.Text + "'";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
-                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + txtRemarks.Text + "' where hsrp_stateid='" + HSRPStateID + "' and laserno ='" + lblRLNo.Text + "'";
+                updateqry = "update rtoinventory set inventorystatus='Rejected',rejectdate=getdate(),remarks='" + ddlmessage.SelectedValue.ToString() + "' where hsrp_stateid='" + HSRPStateID + "' and laserno ='" + lblRLNo.Text + "'";
                 result1 = Utils.ExecNonQuery(updateqry, CnnString);
 
                 strquery2 = "select CHSRPRecordID from HSRPRecords_Rejct where hsrprecordid='" + Recordid + "'";
                 dt = Utils.GetDataTable(strquery2, CnnString);
                 string strRecordID = dt.Rows[0]["CHSRPRecordID"].ToString();
 
-                strquery3 = "insert into rejectplatEntry (ReplacementRequestID,EntryType,EntryDate,OriginalRequestID,RejectionType,RearLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + strRecordID + "','" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblRLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + txtRemarks.Text + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
+                strquery3 = "insert into rejectplatEntry (ReplacementRequestID,EntryType,EntryDate,OriginalRequestID,RejectionType,RearLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + strRecordID + "','" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblRLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + ddlmessage.SelectedValue.ToString() + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
                 int result = Utils.ExecNonQuery(strquery3, CnnString);
                 if (result > 0)
                 {
@@ -365,7 +372,7 @@ namespace HSRP.Master
             }
             else
             {
-                strquery3 = "insert into rejectplatEntry (EntryType,EntryDate,OriginalRequestID,RejectionType,RearLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblRLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + txtRemarks.Text + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
+                strquery3 = "insert into rejectplatEntry (EntryType,EntryDate,OriginalRequestID,RejectionType,RearLaserCode,EmbosssingCenterCode,AffixationCenterCode,ReasonforRejection,OperatorName,ResponsibilityCenter,hsrp_stateid,rtolocationid,RejectionStatus) values('" + ddlEntryType.SelectedItem.ToString() + "',getdate(),'" + Recordid + "','" + ddlRejectType.SelectedItem.ToString() + "','" + lblRLNo.Text + "','" + embossingcode + "','" + AffixationCode + "','" + ddlmessage.SelectedValue.ToString() + "','" + txtoperatorname.Text + "','" + RTOid + "','" + HSRPStateID + "','" + RTOid + "','" + ddlrejectiontype.SelectedItem.Text + "')";
                 int result = Utils.ExecNonQuery(strquery3, CnnString);
                 if (result > 0)
                 {
@@ -532,7 +539,7 @@ namespace HSRP.Master
         public void blank()
         {
            // txtVehicleNo.Text = "";
-            txtRemarks.Text = "";
+            ddlmessage.SelectedValue = "--Select Remark Type--";
             txtoperatorname.Text = "";
             lblFLNo.Text = "";
             lblordertype.Text = "";
@@ -563,6 +570,11 @@ namespace HSRP.Master
                 lblFLNo.Visible=false;
             }
 
+        }
+
+        protected void btnreset_Click(object sender, EventArgs e)
+        {
+            blank();
         }
 
 

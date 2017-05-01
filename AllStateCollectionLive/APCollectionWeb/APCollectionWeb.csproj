@@ -404,6 +404,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\RejectionProcess_Uss_BR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\WebReferenceNewBR\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -555,6 +560,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>APCollectionWeb_WebReference_TG_SalesRequestWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.100.66:7077/USS/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/RejectionRequestWS">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RejectionProcess_Uss_BR\</RelPath>
+      <UpdateFromURL>http://180.151.100.66:7077/USS/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/RejectionRequestWS</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APCollectionWeb_RejectionProcess_Uss_BR_RejectionRequestWS_Service</CachedSettingsPropName>
     </WebReferenceUrl>
     <WebReferenceUrl Include="http://180.151.100.66:7077/USS/WS/Utsav%2520safety%2520systems%2520P%2520Ltd-BH/Page/SalesRequestWS">
       <UrlBehavior>Dynamic</UrlBehavior>
@@ -872,6 +888,14 @@
     </Content>
     <None Include="Web References\RejectionProcess_TG\RejectionRequestWS.wsdl" />
     <None Include="Web References\RejectionProcess_UK\RejectionRequestWS.wsdl" />
+    <Content Include="Web References\RejectionProcess_Uss_BR\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\RejectionProcess_Uss_BR\RejectionRequestWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\RejectionProcess_Uss_BR\RejectionRequestWS.wsdl" />
     <None Include="Web References\WebReferenceNewBR\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

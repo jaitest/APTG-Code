@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile>2015-05-10T00:35:28.0000000-08:00</TimeStampOfAssociatedLegacyPublishXmlFile>
-    <_PublishTargetUrl>C:\deploy\APTG-13-04-2017</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\deploy\APTG-23-04-2017</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="AP/APEmbossing.aspx">
@@ -91,16 +91,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/26/2011 16:16:50</publishTime>
     </File>
     <File Include="bin/DataProvider.dll">
-      <publishTime>04/13/2017 16:26:31</publishTime>
+      <publishTime>04/21/2017 18:03:01</publishTime>
     </File>
     <File Include="bin/Excel.dll">
       <publishTime>01/18/2013 21:40:30</publishTime>
     </File>
     <File Include="bin/HSRP.dll">
-      <publishTime>04/13/2017 16:26:42</publishTime>
+      <publishTime>04/23/2017 22:03:15</publishTime>
     </File>
     <File Include="bin/HSRP.XmlSerializers.dll">
-      <publishTime>04/13/2017 16:26:45</publishTime>
+      <publishTime>04/23/2017 22:03:16</publishTime>
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.dll">
       <publishTime>01/11/2013 19:59:48</publishTime>
@@ -2308,7 +2308,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/04/2016 05:26:20</publishTime>
     </File>
     <File Include="Transaction/APCashCollection.aspx">
-      <publishTime>03/21/2017 10:25:25</publishTime>
+      <publishTime>04/21/2017 17:17:28</publishTime>
     </File>
     <File Include="Transaction/APCashCollection_Check.aspx">
       <publishTime>12/30/2014 07:54:10</publishTime>
@@ -2662,7 +2662,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/08/2013 04:41:34</publishTime>
     </File>
     <File Include="Transaction/PlateRejection.aspx">
-      <publishTime>07/12/2015 07:15:06</publishTime>
+      <publishTime>04/22/2017 15:27:49</publishTime>
     </File>
     <File Include="Transaction/PrintChalan.aspx">
       <publishTime>11/26/2013 04:14:22</publishTime>
@@ -2926,7 +2926,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/28/2016 20:44:06</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/13/2017 16:27:19</publishTime>
+      <publishTime>04/21/2017 18:05:10</publishTime>
     </File>
     <File Include="windowfiles/bird.jpg">
       <publishTime>06/27/2012 20:21:50</publishTime>
