@@ -1253,8 +1253,8 @@ D:\PROJECTUPDATEAmit\Anshul_APTG_Projects_211016\HSRP APTG\DataProvider\bin\Debu
 D:\PROJECTUPDATEAmit\Anshul_APTG_Projects_211016\HSRP APTG\DataProvider\obj\Debug\DataProvider.dll
 D:\PROJECTUPDATEAmit\Anshul_APTG_Projects_211016\HSRP APTG\DataProvider\obj\Debug\DataProvider.pdb
 D:\PROJECTUPDATEAmit\Anshul_APTG_Projects_211016\HSRP APTG\DataProvider\obj\Debug\DataProvider.csprojResolveAssemblyReference.cache
-C:\projects\HSRP APTG\DataProvider\bin\Debug\DataProvider.dll
-C:\projects\HSRP APTG\DataProvider\bin\Debug\DataProvider.pdb
-C:\projects\HSRP APTG\DataProvider\obj\Debug\DataProvider.dll
-C:\projects\HSRP APTG\DataProvider\obj\Debug\DataProvider.pdb
+C:\Projects\HSRP APTG\DataProvider\bin\Debug\DataProvider.dll
+C:\Projects\HSRP APTG\DataProvider\bin\Debug\DataProvider.pdb
+C:\Projects\HSRP APTG\DataProvider\obj\Debug\DataProvider.dll
+C:\Projects\HSRP APTG\DataProvider\obj\Debug\DataProvider.pdb
 C:\Projects\HSRP APTG\DataProvider\obj\Debug\DataProvider.csprojResolveAssemblyReference.cache

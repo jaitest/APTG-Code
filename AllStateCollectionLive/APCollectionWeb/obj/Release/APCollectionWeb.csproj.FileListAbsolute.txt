@@ -85,3 +85,11 @@ C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\A
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.dll
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.pdb
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.dll
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll

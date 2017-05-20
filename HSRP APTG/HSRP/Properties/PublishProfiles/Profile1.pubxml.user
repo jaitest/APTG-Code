@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile>2015-05-10T00:35:28.0000000-08:00</TimeStampOfAssociatedLegacyPublishXmlFile>
-    <_PublishTargetUrl>C:\deploy\APTG-23-04-2017</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\deploy\APTG-12-05-2017</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="AP/APEmbossing.aspx">
@@ -91,16 +91,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/26/2011 16:16:50</publishTime>
     </File>
     <File Include="bin/DataProvider.dll">
-      <publishTime>04/21/2017 18:03:01</publishTime>
+      <publishTime>05/12/2017 10:15:59</publishTime>
     </File>
     <File Include="bin/Excel.dll">
       <publishTime>01/18/2013 21:40:30</publishTime>
     </File>
     <File Include="bin/HSRP.dll">
-      <publishTime>04/23/2017 22:03:15</publishTime>
+      <publishTime>05/12/2017 10:16:10</publishTime>
     </File>
     <File Include="bin/HSRP.XmlSerializers.dll">
-      <publishTime>04/23/2017 22:03:16</publishTime>
+      <publishTime>05/12/2017 10:16:12</publishTime>
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.dll">
       <publishTime>01/11/2013 19:59:48</publishTime>
@@ -2353,7 +2353,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/24/2016 04:02:32</publishTime>
     </File>
     <File Include="Transaction/BankTransactionUpdate.aspx">
-      <publishTime>04/10/2017 12:32:39</publishTime>
+      <publishTime>05/03/2017 12:02:41</publishTime>
     </File>
     <File Include="Transaction/BankTransactionVoid.aspx">
       <publishTime>03/27/2017 11:20:35</publishTime>
@@ -2926,7 +2926,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/28/2016 20:44:06</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/21/2017 18:05:10</publishTime>
+      <publishTime>05/12/2017 10:16:46</publishTime>
     </File>
     <File Include="windowfiles/bird.jpg">
       <publishTime>06/27/2012 20:21:50</publishTime>

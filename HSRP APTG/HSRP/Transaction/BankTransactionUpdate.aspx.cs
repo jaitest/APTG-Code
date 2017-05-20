@@ -344,19 +344,12 @@ namespace HSRP.Master
             try
             {
                 string TransactionID1= Request.QueryString["TransactionID"].ToString();
+                string OrderDate1 = DepositDate.SelectedDate.ToString();
+                string OrderDate2 = DepositDate1.SelectedDate.ToString();
 
-
-                //string OrderDate1 = System.DateTime.Now.ToString(CultureInfo.InvariantCulture);
-                //string OrderDate2 = System.DateTime.Now.ToString(CultureInfo.InvariantCulture);
-                
-                string OrderDate1 = DepositDate1.SelectedDate.ToString();
-                string OrderDate2 = DepositDate.SelectedDate.ToString();
-               // DepositDate1.SelectedDate.ToShortDateString();
-               // DepositDate.SelectedDate.ToShortDateString();
-
-                if (Convert.ToDateTime(DepositDate1.SelectedDate.ToShortTimeString()) <= Convert.ToDateTime(DepositDate.SelectedDate.ToShortTimeString()))
-                //if (Convert.ToDateTime(OrderDate1.ToString()) <= Convert.ToDateTime(OrderDate2.ToString()))
-                {
+                //if (Convert.ToDateTime(OrderDate1) <= Convert.ToDateTime(OrderDate2))
+                if (DepositDate.SelectedDate <= DepositDate1.SelectedDate)           
+                  {
                     if (int.Parse(TextBoxDepositAmount.Text) >= 1)
                     {
                         List<string> lst = new List<string>();

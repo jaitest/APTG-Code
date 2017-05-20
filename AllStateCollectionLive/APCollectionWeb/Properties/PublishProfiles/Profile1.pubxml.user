@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile>
     </TimeStampOfAssociatedLegacyPublishXmlFile>
-    <_PublishTargetUrl>C:\publish\All_State_Collection-16-March-2017</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\publish\All_State_Collection-01-MAY2017</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="APAffixationDone.aspx">
@@ -38,16 +38,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/23/2016 12:15:32</publishTime>
     </File>
     <File Include="BiharCollection.aspx">
-      <publishTime>03/02/2017 17:15:36</publishTime>
+      <publishTime>04/12/2017 11:12:55</publishTime>
     </File>
     <File Include="BiharProductioninProcess.aspx">
       <publishTime>09/21/2015 12:58:38</publishTime>
     </File>
     <File Include="bin/APCollectionWeb.dll">
-      <publishTime>03/16/2017 16:49:32</publishTime>
+      <publishTime>05/01/2017 16:07:22</publishTime>
     </File>
     <File Include="bin/APCollectionWeb.XmlSerializers.dll">
-      <publishTime>03/16/2017 16:49:35</publishTime>
+      <publishTime>05/01/2017 16:07:27</publishTime>
     </File>
     <File Include="bin/Ionic.Zip.Reduced.dll">
       <publishTime>02/18/2016 18:44:50</publishTime>
@@ -71,7 +71,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/21/2016 16:03:40</publishTime>
     </File>
     <File Include="BRRejectionProcess.aspx">
-      <publishTime>06/25/2015 17:50:28</publishTime>
+      <publishTime>04/29/2017 17:24:53</publishTime>
     </File>
     <File Include="DelhiCollection.aspx">
       <publishTime>04/11/2014 12:44:08</publishTime>
@@ -107,7 +107,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/26/2015 18:10:10</publishTime>
     </File>
     <File Include="HPCollection.aspx">
-      <publishTime>04/11/2014 12:44:26</publishTime>
+      <publishTime>04/25/2017 12:56:28</publishTime>
     </File>
     <File Include="HPEmbossing.aspx">
       <publishTime>04/07/2016 18:31:52</publishTime>
@@ -385,6 +385,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Web References/RejectionProcess_UK/RejectionRequestWS.wsdl">
       <publishTime>07/21/2016 12:26:23</publishTime>
     </File>
+    <File Include="Web References/RejectionProcess_Uss_BR/Reference.map">
+      <publishTime>05/01/2017 10:20:46</publishTime>
+    </File>
+    <File Include="Web References/RejectionProcess_Uss_BR/RejectionRequestWS.datasource">
+      <publishTime>05/01/2017 10:21:00</publishTime>
+    </File>
     <File Include="Web References/WebReference/Reference.cs">
       <publishTime>08/23/2016 11:48:21</publishTime>
     </File>
@@ -485,7 +491,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/21/2016 12:25:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/02/2017 17:21:05</publishTime>
+      <publishTime>05/01/2017 14:58:59</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using APCollectionWeb;
 using System.Data;
+using System.IO;
 
 namespace APCollectionWeb
 {
@@ -20,6 +21,10 @@ namespace APCollectionWeb
 
         protected void GetLaserCodesAndhraPradesh()
         {
+            try
+            {
+
+           
             APCollectionWeb.WebReference.SalesRequestWS_Service service = new APCollectionWeb.WebReference.SalesRequestWS_Service();
             service.UseDefaultCredentials = false;
             //service.PreAuthenticate = true;          
@@ -46,7 +51,31 @@ namespace APCollectionWeb
                 utils.ExecNonQuery("update hsrprecords set HSRP_Front_LaserCode= '" + c.Front_Laser_Code + "',HSRP_Rear_LaserCode = '" + c.Rear_Laser_Code + "', erpassigndate=getdate() where hsrp_stateid=9 and HSRPRecordID = '" + c.HSRP_Record_ID + "'", cnnLocal);
                 service.Update(ref Cust);
             }
+            }
+            catch (Exception ex)
+            {
+                AddLog(ex.Message.ToString());
+                throw;
+            }
         }
+
+        static void AddLog(string logtext)
+        {
+            string filename = "APProductionsheet-" + System.DateTime.Now.Day.ToString() + "-" + System.DateTime.Now.Month.ToString() + "-" + System.DateTime.Now.Year.ToString() + ".log";
+            string fileLocation = System.Configuration.ConfigurationManager.AppSettings["APPathX"].ToString();
+            fileLocation += filename;
+            using (StreamWriter sw = File.AppendText(fileLocation))
+            {
+                sw.WriteLine("-------------------" + System.DateTime.Now.ToString() + "--------------------");
+                sw.WriteLine(logtext);
+                sw.WriteLine("-----------------------------------------------------------------------------");
+                sw.Close();
+            }
+
+         
+        }
+
+            
 
     }
 }

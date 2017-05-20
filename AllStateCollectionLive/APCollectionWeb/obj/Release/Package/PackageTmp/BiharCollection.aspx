@@ -11,8 +11,7 @@
     <div>
     
         <asp:Label ID="label1" runat="server"></asp:Label>
-        <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Button" 
-            Visible="False" />
+        <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Button" Visible="False" />
     
     </div>
     </form>

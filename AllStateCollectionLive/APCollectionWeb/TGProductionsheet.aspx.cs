@@ -29,17 +29,30 @@ namespace APCollectionWeb
                 service.Credentials = new System.Net.NetworkCredential("erpwebservice@erp.com", "E@rpweb");
                 APCollectionWeb.WebReference_TG.SalesRequestWS Cust = new APCollectionWeb.WebReference_TG.SalesRequestWS();
                 //[WebApp Laser Code Assigned] =0 and [NAV Laser Code Assigned] =1
-                List<APCollectionWeb.WebReference_TG.SalesRequestWS_Filter> filterArray = new List<APCollectionWeb.WebReference_TG.SalesRequestWS_Filter>();
-                APCollectionWeb.WebReference_TG.SalesRequestWS_Filter nameFilter = new APCollectionWeb.WebReference_TG.SalesRequestWS_Filter();
-                nameFilter.Field = APCollectionWeb.WebReference_TG.SalesRequestWS_Fields.NAV_Laser_Code_Assigned;
-                nameFilter.Criteria = "true";
-                filterArray.Add(nameFilter);
-                APCollectionWeb.WebReference_TG.SalesRequestWS_Filter nameFilter1 = new APCollectionWeb.WebReference_TG.SalesRequestWS_Filter();
-                nameFilter1.Field = APCollectionWeb.WebReference_TG.SalesRequestWS_Fields.WebApp_Laser_Code_Assigned;
-                nameFilter1.Criteria = "false";
-                filterArray.Add(nameFilter1);
-                lblmsg.Text = "There is no record...";
-                APCollectionWeb.WebReference_TG.SalesRequestWS[] list = service.ReadMultiple(filterArray.ToArray(), null, 100);
+                //APCollectionWeb.WebReference_TG.SalesRequestWS_Filter currentdate = new APCollectionWeb.WebReference_TG.SalesRequestWS_Filter();
+                //APCollectionWeb.WebReference_TG.SalesRequestWS_Filter hsrpid = new APCollectionWeb.WebReference_TG.SalesRequestWS_Filter();
+                //currentdate.Field = APCollectionWeb.WebReference_TG.SalesRequestWS_Fields.Planned_Production_Date;
+                //hsrpid.Field = APCollectionWeb.WebReference_TG.SalesRequestWS_Fields.HSRP_Record_ID;
+
+                //string strid = hsrpid.ToString();
+                //currentdate.Criteria = "05-09-2017";
+                
+
+                //if (currentdate.Criteria == "05-09-2017")
+                //{
+                    List<APCollectionWeb.WebReference_TG.SalesRequestWS_Filter> filterArray = new List<APCollectionWeb.WebReference_TG.SalesRequestWS_Filter>();
+                    APCollectionWeb.WebReference_TG.SalesRequestWS_Filter nameFilter = new APCollectionWeb.WebReference_TG.SalesRequestWS_Filter();
+                    nameFilter.Field = APCollectionWeb.WebReference_TG.SalesRequestWS_Fields.NAV_Laser_Code_Assigned;
+                    nameFilter.Criteria = "true";
+                    filterArray.Add(nameFilter);
+                    APCollectionWeb.WebReference_TG.SalesRequestWS_Filter nameFilter1 = new APCollectionWeb.WebReference_TG.SalesRequestWS_Filter();
+                    nameFilter1.Field = APCollectionWeb.WebReference_TG.SalesRequestWS_Fields.WebApp_Laser_Code_Assigned;
+                    nameFilter1.Criteria = "false";
+                                        
+                    filterArray.Add(nameFilter1);
+                    lblmsg.Text = "There is no record...";
+                    APCollectionWeb.WebReference_TG.SalesRequestWS[] list = service.ReadMultiple(filterArray.ToArray(), null, 10);
+               
                 foreach (APCollectionWeb.WebReference_TG.SalesRequestWS c in list)
                 {
                     lblmsg.Text = "Working TG...";
@@ -50,25 +63,16 @@ namespace APCollectionWeb
                     service.Update(ref Cust);
 
                 }
+                //}
+                //else
+                //{
+                //}
             }
 
             catch (Exception ex)
             {
-                AddLog(ex.Message.ToString());
-                try 
-                { 
-                throw ex;
-                }
-                catch
-                { 
-                //continue;
-                }
-            }
-
-            finally
-            {
-               
-            }
+                AddLog(ex.Message.ToString());               
+            }           
 
         }
 

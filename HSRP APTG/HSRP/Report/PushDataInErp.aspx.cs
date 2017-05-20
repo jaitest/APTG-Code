@@ -262,23 +262,34 @@ namespace HSRP.Report
                     }
                     else
                     {
-
-
                         string UID = Session["UID"].ToString();
+                        string txtlog = string.Empty;
 
                         string[] TextBoxValue = txtvehicleno.Text.Split(new Char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
                         for (int j = 0; j < TextBoxValue.Length; j++)
                         {
-                            SQLString = "update hsrprecords set sendtoerp=Null, remarks='ERP' ,NAVSalesOrderNo=Null,NAVProdOrderNo=Null where HSRP_StateID='" + State_ID + "' and hsrprecord_creationdate between '" + fromdate + "' and '" + ToDate + "' and VehicleRegNo='" + TextBoxValue[j] + "' and NAVSalesOrderNo is null and orderstatus='New Order' ";
-                            int i = Utils.ExecNonQuery(SQLString, CnnString);
-                            if (i > 0)
+                            try
                             {
-                                lblSucessMsg.Text = "Record Update Sucessfully ";
+                                SQLString = "update hsrprecords set sendtoerp=Null, remarks='ERP' ,NAVSalesOrderNo=Null,NAVProdOrderNo=Null where HSRP_StateID='" + State_ID + "' and hsrprecord_creationdate between '" + fromdate + "' and '" + ToDate + "' and VehicleRegNo='" + TextBoxValue[j] + "' and NAVSalesOrderNo is null and orderstatus='New Order' ";
+                                int i = Utils.ExecNonQuery(SQLString, CnnString);
+                                if (i > 0)
+                                {
+                                    lblSucessMsg.Text = "Record Update Sucessfully ";
+                                    //txtlog = "Record Update Sucessfully";
+                                }
+                                else
+                                {
+                                    lblErrMsg.Text = "Record Not Updated";
+                                   // txtlog = "Record Not Updated";
+                                }
+                               // AddLog(TextBoxValue[j]);
+                                //AddLog(txtlog);
                             }
-                            else
+                            catch (Exception ex)
                             {
-                                lblErrMsg.Text = "Record Not Updated";
-                            }
+                                AddLog(ex.Message.ToString());
+                            }      
+
                         }
                     }
 
@@ -286,10 +297,23 @@ namespace HSRP.Report
             }
             catch (Exception ex)
             {
+               
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Record Not Updated');", true);
                 lblErrMsg.Text = ex.Message.ToString();
             }
 
+        }
+
+        static void AddLog(string logText)
+        {     
+            string pathx = "C:\\LaserFolder\\APTGRecordPush-" + System.DateTime.Now.Day.ToString() + "-" + System.DateTime.Now.Month.ToString() + "-" + System.DateTime.Now.Year.ToString() + ".log";
+            using (StreamWriter sw = File.AppendText(pathx))
+            {
+                sw.WriteLine("-------------------" + System.DateTime.Now.ToString() + "--------------------");
+                sw.WriteLine(logText);
+                sw.WriteLine("-----------------------------------------------------------------------------");
+                sw.Close();
+            }
         }
 
         protected void btnSave_Click(object sender, EventArgs e)
