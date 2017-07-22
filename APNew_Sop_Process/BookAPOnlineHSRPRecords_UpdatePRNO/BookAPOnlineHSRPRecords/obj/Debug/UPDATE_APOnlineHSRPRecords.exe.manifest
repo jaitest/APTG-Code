@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="UPDATE_APOnlineHSRPRecords.exe" version="1.0.0.27" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="UPDATE_APOnlineHSRPRecords.exe" version="1.0.0.28" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="UPDATE_APOnlineHSRPRecords" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -54,24 +54,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UPDATE_APOnlineHSRPRecords.exe" size="14848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UPDATE_APOnlineHSRPRecords.exe" size="15360">
       <assemblyIdentity name="UPDATE_APOnlineHSRPRecords" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vvhqS10WSCYugZMUnD1FjKk5iTeya9SXdFcNPsMclqM=</dsig:DigestValue>
+        <dsig:DigestValue>XEWkWsGFOleRI6/U0s6l7UBE+4ANl7GuBDcIbohEdY4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="UPDATE_APOnlineHSRPRecords.exe.config" size="2211">
+  <file name="UPDATE_APOnlineHSRPRecords.exe.config" size="1449">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>CIBUwpf9ldq8tTCWhHBLydfkjmOIGoF5Xgmd8oVAZ/E=</dsig:DigestValue>
+      <dsig:DigestValue>X+TlDWTQ9nwBu5HS6xl5PnCCI6zBckgHPrpY/eCogic=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

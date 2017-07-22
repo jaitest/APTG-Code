@@ -92,7 +92,7 @@ namespace TenderReports
         {
             string DateFolder = System.DateTime.Now.Day.ToString() + "-" + System.DateTime.Now.Month.ToString() + "-" + System.DateTime.Now.Year.ToString();
 
-            strPath = "G:\\AllTenderReports";
+            strPath = "D:\\AllTenderReports";
             //strPath = excelsheet;
             if (!Directory.Exists(strPath))
             {

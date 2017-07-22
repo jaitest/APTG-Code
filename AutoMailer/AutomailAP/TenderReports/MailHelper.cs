@@ -50,7 +50,6 @@ namespace SendMail
                 DataTable dt = new DataTable();
                 SqlDataAdapter adp = new SqlDataAdapter();
                 adp.SelectCommand = new SqlCommand("select * from SendReportEmail where StateID=9", strcon);
-                //adp.SelectCommand = new SqlCommand("select * from SendReportS where StateID=9", strcon);
                 adp.SelectCommand.CommandTimeout = 0;
                 adp.Fill(dt);
                 return dt;
@@ -115,36 +114,14 @@ namespace SendMail
                 }
                 else
                 {
-                    msg.To.Add("ravikmunjal@gmail.com");
+                    msg.To.Add("developer0186@gmail.com");
                 }
             }
             else
             {
-                msg.To.Add("ravikmunjal@gmail.com");
+                msg.To.Add("developer0186@gmail.com");
             }
-
-
-            //More Address Add This Formate
-            
-           //  string toAddress = "ravikmunjal@gmail.com";
-             //string toAddress =  "developer0186@gmail.com";  
-           //  msg.To.Add(toAddress);
-
-            string fromAddress = "reportshsrp@gmail.com";
-            //msg.To.Add("sridhar.kumar@hsrpap.com");
-            //msg.To.Add("shaik.ahamad@hsrpap.com");
-            //msg.To.Add("ashok.sharma@linkutsav.com");
-            //msg.To.Add("gaurav.kaushik@linkutsav.com");
-            //msg.To.Add("corporatesolutions15@gmail.com");
-            //msg.To.Add("muralidhar@hsrpts.com");
-            //msg.To.Add("vasanthkumar@hsrpts.com");
-            //msg.To.Add("corporatesolutions15@gmail.com");
-            ////msg.To.Add("amitbhargavain@gmail.com");
-            //msg.To.Add(" developer0186@gmail.com");
-            //msg.To.Add("kantiswaroop.01@gmail.com");
-            //msg.To.Add("nikhilgambhir25@gmail.com");
-            //msg.To.Add("ramesh.k@hsrpap.com");
-            //msg.To.Add("mailmeavatesh@gmail.com");
+            string fromAddress = "reportshsrp@gmail.com";          
     
             msg.From = new MailAddress(fromAddress);
             msg.IsBodyHtml = true;

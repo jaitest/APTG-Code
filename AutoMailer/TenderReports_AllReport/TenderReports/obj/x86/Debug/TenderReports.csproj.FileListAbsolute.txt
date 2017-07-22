@@ -210,3 +210,6 @@ C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\TenderReports
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\TenderReports_AllReport\TenderReports\obj\x86\Debug\AllStatemail.TrustInfo.xml
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\TenderReports_AllReport\TenderReports\obj\x86\Debug\AllStatemail.exe.manifest
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\TenderReports_AllReport\TenderReports\obj\x86\Debug\AllStatemail.application
+C:\Projects\AutoMailer\TenderReports_AllReport\TenderReports\bin\Debug\AllStatemail.exe.config
+C:\Projects\AutoMailer\TenderReports_AllReport\TenderReports\obj\x86\Debug\AllStatemail.exe
+C:\Projects\AutoMailer\TenderReports_AllReport\TenderReports\obj\x86\Debug\AllStatemail.pdb

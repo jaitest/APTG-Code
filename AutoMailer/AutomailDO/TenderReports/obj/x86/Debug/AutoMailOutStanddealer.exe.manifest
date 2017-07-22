@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoMailOutStanddealer.exe" size="36864">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoMailOutStanddealer.exe" size="37376">
       <assemblyIdentity name="AutoMailOutStanddealer" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>gLeVw42ypvLDNIuL76Hko4Ygcag=</dsig:DigestValue>
+        <dsig:DigestValue>hLJlqg3utxwMlU40RAr6zrKTTy4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

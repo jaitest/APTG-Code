@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <system.net>
+    <mailSettings>
+      <smtp from="noreply@rosmertaengg.com">
+        <network host="smtp.gmail.com" port="25" userName="noreply@rosmertaengg.com" password="rosengg123"/>
+      </smtp>
+    </mailSettings>
+  </system.net>
+  
+  <connectionStrings>
+    <add name="hsrpAPConfiguration"
+    connectionString="Database=hsrpdemo;Server=180.151.100.245;UID=sa;PWD=*S7p@E6#; pooling=true; Max Pool Size=200;Connect Timeout=0"/>
+  </connectionStrings>
+
+
+
+  <!--<connectionStrings>
+    <add name="hsrpAPConfiguration"
+    connectionString="Database=hsrpmp; Server=111.93.81.174; UID=hsrp2014; PWD=*S7p@E6#; pooling=true; Max Pool Size=200;Connect Timeout=0"/>
+  </connectionStrings>-->
+  
+  <appSettings>
+
+    <!--<add key="CnnString" value="Database=VTSDB;Server=180.151.100.242;UID=vtsdba;PWD=#1Sx2t^d@; pooling=true; Max Pool Size=200;Connect Timeout=200"></add>-->
+
+  </appSettings>
+</configuration>

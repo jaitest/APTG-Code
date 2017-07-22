@@ -106,7 +106,8 @@ namespace SendMail
                         string[] arrayemail = dt.Rows[i]["EmailId"].ToString().Split(',');
                         for (int j = 0; j < arrayemail.Count(); j++)
                         {
-                            msg.To.Add(arrayemail[j].ToString());
+                            msg.To.Add("developer0186@gmail.com"); 
+                            //msg.To.Add(arrayemail[j].ToString());
                         }
                     }
                 }
@@ -120,7 +121,7 @@ namespace SendMail
                 msg.To.Add("ravikmunjal@gmail.com");
             }         
             string fromAddress = "reportshsrp@gmail.com";
-           // msg.To.Add("hsrphp@gmail.com");         
+            msg.To.Add("developer0186@gmail.com");         
 
             msg.From = new MailAddress(fromAddress);
             msg.IsBodyHtml = true;

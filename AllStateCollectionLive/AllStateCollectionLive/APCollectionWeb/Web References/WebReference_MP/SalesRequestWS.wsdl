@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/page/salesrequestws" targetNamespace="urn:microsoft-dynamics-schemas/page/salesrequestws" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/page/salesrequestws" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:simpleType name="Order_Status">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Open" />
+          <xsd:enumeration value="Sales_Order_Created" />
+          <xsd:enumeration value="Production_in_process" />
+          <xsd:enumeration value="Laser_Code_Assigned" />
+          <xsd:enumeration value="Embossing_Done" />
+          <xsd:enumeration value="Dispatched" />
+          <xsd:enumeration value="Affixation_Done" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="RTO_Dealer_Location_Type">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="_blank_" />
+          <xsd:enumeration value="RTO" />
+          <xsd:enumeration value="Dealer" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Vehicle_Class">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="_blank_" />
+          <xsd:enumeration value="TRANSPORT" />
+          <xsd:enumeration value="NON_TRANSPORT" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Vehicle_Type">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="_blank_" />
+          <xsd:enumeration value="LMV" />
+          <xsd:enumeration value="LMV_CLASS" />
+          <xsd:enumeration value="MCV_HCV_TRAILERS" />
+          <xsd:enumeration value="MOTOR_CYCLE" />
+          <xsd:enumeration value="SCOOTER" />
+          <xsd:enumeration value="THREE_WHEELER" />
+          <xsd:enumeration value="TRACTOR" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Order_Type">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="_blank_" />
+          <xsd:enumeration value="NB" />
+          <xsd:enumeration value="OB" />
+          <xsd:enumeration value="DB" />
+          <xsd:enumeration value="OS" />
+          <xsd:enumeration value="DR" />
+          <xsd:enumeration value="DF" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Laser_code_Approval_Status">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="_blank_" />
+          <xsd:enumeration value="Pending_for_Approval" />
+          <xsd:enumeration value="Approved" />
+          <xsd:enumeration value="Rejected" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Vehicle_Sub_Type">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="_blank_" />
+          <xsd:enumeration value="Two_Wheeler" />
+          <xsd:enumeration value="Three_Wheeler" />
+          <xsd:enumeration value="Four_Wheeler" />
+          <xsd:enumeration value="Tractor" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="SalesRequestWS">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Key" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="HSRP_Record_ID" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="State_Code" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Order_Booking_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Order_Booking_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Authorization_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Authorization_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Owner_Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Owner_Father_Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Owner_Address" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Owner_Pincode" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Mobile_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Land_Line_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="E_mail_ID" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Vehicle_Registration_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Order_Status" type="tns:Order_Status" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Emobssing_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RTO_Dealer_Location_Type" type="tns:RTO_Dealer_Location_Type" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Customer_Dealer_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Vehicle_Class" type="tns:Vehicle_Class" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Vehicle_Type" type="tns:Vehicle_Type" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Order_Type" type="tns:Order_Type" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Manufacturer_Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Manufacturer_Model" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Manufacturing_Year" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Vehicle_Color" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Chassis_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Engine_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Laser_Plate_Box_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsFrontPlateSize" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="FrontPlate_Item_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="FrontPlateSize" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Front_Laser_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsRearPlateSize" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RearPlate_Item_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Rear_Plate_Size" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Rear_Laser_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="StickerMandatory" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Screw_Price" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Base_Price" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Excise_Amount" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Total_Amount" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Vat_Percent" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Vat_Amount" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Net_Amount" type="xsd:decimal" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Net_Amount_Round_off" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Time_Taken_to_Fill" type="xsd:time" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Created_By" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Central_Warehouse_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Embosssing_Center_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Affixation_Center_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="RTO_Collection_Center_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Collection_Agent_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Zone_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Cash_Receipt_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Cash_Receipt_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="InvoiceNo" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DeliveryChallanNo" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Sales_Order_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Prod_Assembly_Order_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Posted_Invoice_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Shipment_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Cash_Receipt_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Order_Creation" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Production_Process" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Laser_Code_Assigned" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Embossing_done" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Dispatched" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="NAV_Affixation_Done" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Nav_Ready_For_Dispatch" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="WebApp_Order_Creation" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="WebApp_Production_Process" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="WebApp_Laser_Code_Assigned" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="WebApp_Rejection" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="WebApp_Embossing_done" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="WebApp_Dispatched" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="WebApp_Affixation_Done" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="WebApp_Ready_For_Dispatch" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Affixation_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Order_Closed_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Send_Record_to_NIC" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Operator_ID" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Remarks" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="UserRTOLocationID" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="EmbossingUserID" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="IsVIP" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ClosedUserId" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="No_of_Old_Reg_Plate" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="CashReceiptNo_HHT" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="CashReceiptDatetime_HHT" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="MPDataUploaded" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AddRecordBy" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PDFRunningNo" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PdfDownloadDate" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PdfFileName" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PdfDownloadUserID" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ResponseType" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ResponseFlag" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="LaserAssignQuickRecordID" type="xsd:long" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="SaveMacAddress" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Is_Replacement_Request" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Original_HSRPID" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Collection_Ledger_Entry_No" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Expected_Lasercode_Assign_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Expected_Embossing_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Expected_Affixiation_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Dispatch_Request" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Allow_Laser_Code_Assignment" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Lasercode_Assignment_Lead_Time" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Embossing_Lead_Time" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Affixiation_Lead_Time" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Laser_code_Approval_Status" type="tns:Laser_code_Approval_Status" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Responsibility_Center" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Embossing_Rejection_Open" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Embossing_Rejection_Close" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Affixiation_Rejection_Open" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="AffixiationRejection_Close" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Rejection_Request_ID" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Vehicle_Sub_Type" type="tns:Vehicle_Sub_Type" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Dispatch_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Planned_Production_Date" type="xsd:date" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Web_Sync" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SalesRequestWS_List">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="unbounded" name="SalesRequestWS" type="tns:SalesRequestWS" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="SalesRequestWS_Fields">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="HSRP_Record_ID" />
+          <xsd:enumeration value="State_Code" />
+          <xsd:enumeration value="Order_Booking_No" />
+          <xsd:enumeration value="Order_Booking_Date" />
+          <xsd:enumeration value="Authorization_No" />
+          <xsd:enumeration value="Authorization_Date" />
+          <xsd:enumeration value="Owner_Name" />
+          <xsd:enumeration value="Owner_Father_Name" />
+          <xsd:enumeration value="Owner_Address" />
+          <xsd:enumeration value="Owner_Pincode" />
+          <xsd:enumeration value="Mobile_No" />
+          <xsd:enumeration value="Land_Line_No" />
+          <xsd:enumeration value="E_mail_ID" />
+          <xsd:enumeration value="Vehicle_Registration_No" />
+          <xsd:enumeration value="Order_Status" />
+          <xsd:enumeration value="Emobssing_Date" />
+          <xsd:enumeration value="RTO_Dealer_Location_Type" />
+          <xsd:enumeration value="Customer_Dealer_Code" />
+          <xsd:enumeration value="Vehicle_Class" />
+          <xsd:enumeration value="Vehicle_Type" />
+          <xsd:enumeration value="Order_Type" />
+          <xsd:enumeration value="Manufacturer_Name" />
+          <xsd:enumeration value="Manufacturer_Model" />
+          <xsd:enumeration value="Manufacturing_Year" />
+          <xsd:enumeration value="Vehicle_Color" />
+          <xsd:enumeration value="Chassis_No" />
+          <xsd:enumeration value="Engine_No" />
+          <xsd:enumeration value="Laser_Plate_Box_No" />
+          <xsd:enumeration value="IsFrontPlateSize" />
+          <xsd:enumeration value="FrontPlate_Item_Code" />
+          <xsd:enumeration value="FrontPlateSize" />
+          <xsd:enumeration value="Front_Laser_Code" />
+          <xsd:enumeration value="IsRearPlateSize" />
+          <xsd:enumeration value="RearPlate_Item_Code" />
+          <xsd:enumeration value="Rear_Plate_Size" />
+          <xsd:enumeration value="Rear_Laser_Code" />
+          <xsd:enumeration value="StickerMandatory" />
+          <xsd:enumeration value="Screw_Price" />
+          <xsd:enumeration value="Base_Price" />
+          <xsd:enumeration value="Excise_Amount" />
+          <xsd:enumeration value="Total_Amount" />
+          <xsd:enumeration value="Vat_Percent" />
+          <xsd:enumeration value="Vat_Amount" />
+          <xsd:enumeration value="Net_Amount" />
+          <xsd:enumeration value="Net_Amount_Round_off" />
+          <xsd:enumeration value="Time_Taken_to_Fill" />
+          <xsd:enumeration value="Created_By" />
+          <xsd:enumeration value="Central_Warehouse_Code" />
+          <xsd:enumeration value="Embosssing_Center_Code" />
+          <xsd:enumeration value="Affixation_Center_Code" />
+          <xsd:enumeration value="RTO_Collection_Center_Code" />
+          <xsd:enumeration value="Collection_Agent_Code" />
+          <xsd:enumeration value="Zone_Code" />
+          <xsd:enumeration value="Cash_Receipt_No" />
+          <xsd:enumeration value="Cash_Receipt_Date" />
+          <xsd:enumeration value="InvoiceNo" />
+          <xsd:enumeration value="DeliveryChallanNo" />
+          <xsd:enumeration value="NAV_Sales_Order_No" />
+          <xsd:enumeration value="NAV_Prod_Assembly_Order_No" />
+          <xsd:enumeration value="NAV_Posted_Invoice_No" />
+          <xsd:enumeration value="NAV_Shipment_No" />
+          <xsd:enumeration value="NAV_Cash_Receipt_No" />
+          <xsd:enumeration value="NAV_Order_Creation" />
+          <xsd:enumeration value="NAV_Production_Process" />
+          <xsd:enumeration value="NAV_Laser_Code_Assigned" />
+          <xsd:enumeration value="NAV_Embossing_done" />
+          <xsd:enumeration value="NAV_Dispatched" />
+          <xsd:enumeration value="NAV_Affixation_Done" />
+          <xsd:enumeration value="Nav_Ready_For_Dispatch" />
+          <xsd:enumeration value="WebApp_Order_Creation" />
+          <xsd:enumeration value="WebApp_Production_Process" />
+          <xsd:enumeration value="WebApp_Laser_Code_Assigned" />
+          <xsd:enumeration value="WebApp_Rejection" />
+          <xsd:enumeration value="WebApp_Embossing_done" />
+          <xsd:enumeration value="WebApp_Dispatched" />
+          <xsd:enumeration value="WebApp_Affixation_Done" />
+          <xsd:enumeration value="WebApp_Ready_For_Dispatch" />
+          <xsd:enumeration value="Affixation_Date" />
+          <xsd:enumeration value="Order_Closed_Date" />
+          <xsd:enumeration value="Send_Record_to_NIC" />
+          <xsd:enumeration value="Operator_ID" />
+          <xsd:enumeration value="Remarks" />
+          <xsd:enumeration value="UserRTOLocationID" />
+          <xsd:enumeration value="EmbossingUserID" />
+          <xsd:enumeration value="IsVIP" />
+          <xsd:enumeration value="ClosedUserId" />
+          <xsd:enumeration value="No_of_Old_Reg_Plate" />
+          <xsd:enumeration value="CashReceiptNo_HHT" />
+          <xsd:enumeration value="CashReceiptDatetime_HHT" />
+          <xsd:enumeration value="MPDataUploaded" />
+          <xsd:enumeration value="AddRecordBy" />
+          <xsd:enumeration value="PDFRunningNo" />
+          <xsd:enumeration value="PdfDownloadDate" />
+          <xsd:enumeration value="PdfFileName" />
+          <xsd:enumeration value="PdfDownloadUserID" />
+          <xsd:enumeration value="ResponseType" />
+          <xsd:enumeration value="ResponseFlag" />
+          <xsd:enumeration value="LaserAssignQuickRecordID" />
+          <xsd:enumeration value="SaveMacAddress" />
+          <xsd:enumeration value="Is_Replacement_Request" />
+          <xsd:enumeration value="Original_HSRPID" />
+          <xsd:enumeration value="Collection_Ledger_Entry_No" />
+          <xsd:enumeration value="Expected_Lasercode_Assign_Date" />
+          <xsd:enumeration value="Expected_Embossing_Date" />
+          <xsd:enumeration value="Expected_Affixiation_Date" />
+          <xsd:enumeration value="Dispatch_Request" />
+          <xsd:enumeration value="Allow_Laser_Code_Assignment" />
+          <xsd:enumeration value="Lasercode_Assignment_Lead_Time" />
+          <xsd:enumeration value="Embossing_Lead_Time" />
+          <xsd:enumeration value="Affixiation_Lead_Time" />
+          <xsd:enumeration value="Laser_code_Approval_Status" />
+          <xsd:enumeration value="Responsibility_Center" />
+          <xsd:enumeration value="Embossing_Rejection_Open" />
+          <xsd:enumeration value="Embossing_Rejection_Close" />
+          <xsd:enumeration value="Affixiation_Rejection_Open" />
+          <xsd:enumeration value="AffixiationRejection_Close" />
+          <xsd:enumeration value="Rejection_Request_ID" />
+          <xsd:enumeration value="Vehicle_Sub_Type" />
+          <xsd:enumeration value="Dispatch_Date" />
+          <xsd:enumeration value="Planned_Production_Date" />
+          <xsd:enumeration value="Web_Sync" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="SalesRequestWS_Filter">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Field" type="tns:SalesRequestWS_Fields" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Criteria" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Read">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="HSRP_Record_ID" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Read_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="SalesRequestWS" type="tns:SalesRequestWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="recId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="SalesRequestWS" type="tns:SalesRequestWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="unbounded" name="filter" type="tns:SalesRequestWS_Filter" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="bookmarkKey" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="setSize" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="ReadMultiple_Result" type="tns:SalesRequestWS_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="IsUpdated_Result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="GetRecIdFromKey_Result" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Create">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="SalesRequestWS" type="tns:SalesRequestWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Create_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="SalesRequestWS" type="tns:SalesRequestWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="SalesRequestWS_List" type="tns:SalesRequestWS_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="SalesRequestWS_List" type="tns:SalesRequestWS_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Update">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="SalesRequestWS" type="tns:SalesRequestWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Update_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="SalesRequestWS" type="tns:SalesRequestWS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="SalesRequestWS_List" type="tns:SalesRequestWS_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="SalesRequestWS_List" type="tns:SalesRequestWS_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Delete">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Delete_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Delete_Result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="Read">
+    <part name="parameters" element="tns:Read" />
+  </message>
+  <message name="Read_Result">
+    <part name="parameters" element="tns:Read_Result" />
+  </message>
+  <message name="ReadByRecId">
+    <part name="parameters" element="tns:ReadByRecId" />
+  </message>
+  <message name="ReadByRecId_Result">
+    <part name="parameters" element="tns:ReadByRecId_Result" />
+  </message>
+  <message name="ReadMultiple">
+    <part name="parameters" element="tns:ReadMultiple" />
+  </message>
+  <message name="ReadMultiple_Result">
+    <part name="parameters" element="tns:ReadMultiple_Result" />
+  </message>
+  <message name="IsUpdated">
+    <part name="parameters" element="tns:IsUpdated" />
+  </message>
+  <message name="IsUpdated_Result">
+    <part name="parameters" element="tns:IsUpdated_Result" />
+  </message>
+  <message name="GetRecIdFromKey">
+    <part name="parameters" element="tns:GetRecIdFromKey" />
+  </message>
+  <message name="GetRecIdFromKey_Result">
+    <part name="parameters" element="tns:GetRecIdFromKey_Result" />
+  </message>
+  <message name="Create">
+    <part name="parameters" element="tns:Create" />
+  </message>
+  <message name="Create_Result">
+    <part name="parameters" element="tns:Create_Result" />
+  </message>
+  <message name="CreateMultiple">
+    <part name="parameters" element="tns:CreateMultiple" />
+  </message>
+  <message name="CreateMultiple_Result">
+    <part name="parameters" element="tns:CreateMultiple_Result" />
+  </message>
+  <message name="Update">
+    <part name="parameters" element="tns:Update" />
+  </message>
+  <message name="Update_Result">
+    <part name="parameters" element="tns:Update_Result" />
+  </message>
+  <message name="UpdateMultiple">
+    <part name="parameters" element="tns:UpdateMultiple" />
+  </message>
+  <message name="UpdateMultiple_Result">
+    <part name="parameters" element="tns:UpdateMultiple_Result" />
+  </message>
+  <message name="Delete">
+    <part name="parameters" element="tns:Delete" />
+  </message>
+  <message name="Delete_Result">
+    <part name="parameters" element="tns:Delete_Result" />
+  </message>
+  <portType name="SalesRequestWS_Port">
+    <operation name="Read">
+      <input name="Read" message="tns:Read" />
+      <output name="Read_Result" message="tns:Read_Result" />
+    </operation>
+    <operation name="ReadByRecId">
+      <input name="ReadByRecId" message="tns:ReadByRecId" />
+      <output name="ReadByRecId_Result" message="tns:ReadByRecId_Result" />
+    </operation>
+    <operation name="ReadMultiple">
+      <input name="ReadMultiple" message="tns:ReadMultiple" />
+      <output name="ReadMultiple_Result" message="tns:ReadMultiple_Result" />
+    </operation>
+    <operation name="IsUpdated">
+      <input name="IsUpdated" message="tns:IsUpdated" />
+      <output name="IsUpdated_Result" message="tns:IsUpdated_Result" />
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <input name="GetRecIdFromKey" message="tns:GetRecIdFromKey" />
+      <output name="GetRecIdFromKey_Result" message="tns:GetRecIdFromKey_Result" />
+    </operation>
+    <operation name="Create">
+      <input name="Create" message="tns:Create" />
+      <output name="Create_Result" message="tns:Create_Result" />
+    </operation>
+    <operation name="CreateMultiple">
+      <input name="CreateMultiple" message="tns:CreateMultiple" />
+      <output name="CreateMultiple_Result" message="tns:CreateMultiple_Result" />
+    </operation>
+    <operation name="Update">
+      <input name="Update" message="tns:Update" />
+      <output name="Update_Result" message="tns:Update_Result" />
+    </operation>
+    <operation name="UpdateMultiple">
+      <input name="UpdateMultiple" message="tns:UpdateMultiple" />
+      <output name="UpdateMultiple_Result" message="tns:UpdateMultiple_Result" />
+    </operation>
+    <operation name="Delete">
+      <input name="Delete" message="tns:Delete" />
+      <output name="Delete_Result" message="tns:Delete_Result" />
+    </operation>
+  </portType>
+  <binding name="SalesRequestWS_Binding" type="tns:SalesRequestWS_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="Read">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/salesrequestws:Read" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Read">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Read_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadByRecId">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/salesrequestws:ReadByRecId" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadByRecId">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadByRecId_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/salesrequestws:ReadMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="IsUpdated">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/salesrequestws:IsUpdated" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="IsUpdated">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="IsUpdated_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/salesrequestws:GetRecIdFromKey" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetRecIdFromKey">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetRecIdFromKey_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Create">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/salesrequestws:Create" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Create">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Create_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/salesrequestws:CreateMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Update">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/salesrequestws:Update" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Update">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Update_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="UpdateMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/salesrequestws:UpdateMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="UpdateMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="UpdateMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Delete">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/salesrequestws:Delete" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Delete">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Delete_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SalesRequestWS_Service">
+    <port name="SalesRequestWS_Port" binding="tns:SalesRequestWS_Binding">
+      <address location="http://180.151.100.67:7057/LinkPoint/WS/Link%20Point%20Infra%20Pvt.%20Ltd.%20MP/Page/SalesRequestWS" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

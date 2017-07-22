@@ -90,7 +90,7 @@ namespace TenderReports
         private string SetFolder(string strRTO, string strState, string strFile)
         {
             string DateFolder = System.DateTime.Now.Day.ToString() + "-" + System.DateTime.Now.Month.ToString() + "-" + System.DateTime.Now.Year.ToString();
-            strPath = "G:\\TenderReportsAP";           
+            strPath = "D:\\TenderReportsAP";           
             if (!Directory.Exists(strPath))
             {
                 CreateFolder(DateFolder, strState, strPath);
@@ -190,27 +190,8 @@ namespace TenderReports
         #endregion
 
         private void frmAutoMailReport_Load(object sender, EventArgs e)
-        {
-            //try
-            //{
-
-            //    if (DateTime.Now.ToString("dddd") != "Sunday")
-            //    {
-            //        Export();
-            //        string CurrentDate = System.DateTime.Now.ToShortDateString();
-            //        string directoryPath = strPath;
-            //        DirectoryInfo directorySelected = new DirectoryInfo(directoryPath);
-            //        MailHelper.SendMailMessage("reportshsrp@gmail.com", directoryPath, strPath);
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw ex;
-            //}
-                 
+        {                           
             GetState();
-            
-           // button2_Click(button1, new EventArgs());
         }
 
         private DataTable GetRtoLocation()
@@ -414,19 +395,8 @@ namespace TenderReports
                 row.Index = iIndex++;
                 row.Cells.Add(new WorksheetCell("State:", "HeaderStyle2"));
                 row.Cells.Add(new WorksheetCell("ANDHRA PRADESH", "HeaderStyle2"));
-               
-                //AddNewCell(row, "State:", "HeaderStyle2", 1);
-
                 row = sheet.Table.Rows.Add();
-                row.Index = iIndex++;
-
-                //DateTime dates = Convert.ToDateTime(DateTime.Now.ToShortDateString());
-                //DateTime dates1 = Convert.ToDateTime(DateTime.Now.ToShortDateString());
-
-                //dates = dates1.AddDays(-1);
-
-
-                //row.Cells.Add(new WorksheetCell(System.DateTime.Now.AddDays(-1).ToString(), "HeaderStyle2"));
+                row.Index = iIndex++;       
                 if (DateTime.Now.ToString("dddd") == "Monday")
                 {
                     row.Cells.Add(new WorksheetCell("Report Date:", "HeaderStyle2"));
@@ -437,18 +407,9 @@ namespace TenderReports
                     row.Cells.Add(new WorksheetCell("Report Date:", "HeaderStyle2"));
                     row.Cells.Add(new WorksheetCell(System.DateTime.Now.AddDays(-1).ToString("dd/MMM/yyyy"), "HeaderStyle2"));
                 }
-                
-                //AddNewCell(row, DropDownListStateName.SelectedItem.Text, "HeaderStyle2", 1);
+                              
                 row = sheet.Table.Rows.Add();
                 row.Index = iIndex++;
-
-               //ateTime dates = Convert.ToDateTime(DateTime.Now.ToShortDateString());
-
-               
-                // AddNewCell(row, "Report Duration:", "HeaderStyle2", 1);
-                // AddNewCell(row, OrderDate.SelectedDate.ToString("dd/MMM/yyyy") + "-" + HSRPAuthDate.SelectedDate.ToString("dd/MMM/yyyy"), "HeaderStyle2", 1);
-                //  row = sheet.Table.Rows.Add();
-
                 row.Index = iIndex++;
                 row.Index = iIndex++;
                 #endregion
@@ -457,15 +418,6 @@ namespace TenderReports
                 string RTOColName = string.Empty;
                 for (int i = 0; i < dt.Columns.Count; i++)
                 {
-                    //if (dt.Columns[i].ColumnName.ToString().Length < 2)
-                    //{
-                    //    AddNewCell(row, dt.Columns[i].ColumnName.ToString().Remove(dt.Columns[i].ColumnName.ToString().Length, 0), "HeaderStyleHeader", 1);
-                    //}
-                    //else
-                    //{
-                    //    AddNewCell(row, dt.Columns[i].ColumnName.ToString().Remove(dt.Columns[i].ColumnName.ToString().Length - 2, 0), "HeaderStyleHeader", 1);
-                    //}
-
                     AddNewCell(row, dt.Columns[i].ColumnName.ToString(), "HeaderStyleHeader", 1);
                 }
                 row = sheet.Table.Rows.Add();
@@ -477,16 +429,7 @@ namespace TenderReports
 
                     for (int i = 0; i < dt.Columns.Count; i++)
                     {
-
-                        //if (dt.Rows[j]["Location"].ToString().Equals("ZZZZZ") && i.Equals(0))
-                        //{
-                        //    AddNewCell(row, "Total", "HeaderStyle6", 1);
-                        //}
-                        //else
-                        //{
                         AddNewCell(row, dt.Rows[j][i].ToString(), "HeaderStyle6", 1);
-
-                        //}
                     }
                     row = sheet.Table.Rows.Add();
 
@@ -495,24 +438,12 @@ namespace TenderReports
 
 
                 #endregion
-               // HttpContext context = HttpContext.Current;
-             //   context.Response.Clear();
-                // Save the file and open it
-                //book.Save(Response.OutputStream);
+
                 string filename = spname +"_"  + System.DateTime.Now.Day.ToString() + System.DateTime.Now.Month.ToString() + System.DateTime.Now.Year.ToString() + System.DateTime.Now.Hour.ToString() + System.DateTime.Now.Minute.ToString() + System.DateTime.Now.Second.ToString() + ".xls";
-                //string filename = "Collection_V_S_Deposit" + "_" + strMonth + strYear + "_" + System.DateTime.Now.Day.ToString() + System.DateTime.Now.Month.ToString() + System.DateTime.Now.Year.ToString() + System.DateTime.Now.Hour.ToString() + System.DateTime.Now.Minute.ToString() + ".xls";
+
                 SetFolder("", cmbState.Text, spname + "_" + strMonth + strYear + "_");
                 book.Save(strPath + "\\" + filename);
-                //System.Threading.Thread.Sleep(1000);
-                        }
-                     
-                //context.Response.ContentType = "text/csv";
-              //  context.Response.ContentType = "application/vnd.ms-excel";
-                //string filename = "Report" + System.DateTime.Now.Day.ToString() + System.DateTime.Now.Month.ToString() + System.DateTime.Now.Year.ToString() + System.DateTime.Now.Hour.ToString() + System.DateTime.Now.Minute.ToString() + ".xls";
-
-               // context.Response.AppendHeader("Content-Disposition", "attachment; filename=" + filename);
-               // context.Response.End();
-
+                         }
                     }
                 }
             }

@@ -301,3 +301,9 @@ D:\SHANOO\AllStatusWebsite(24-06-2015)\BRStatus\BRStatus\HSRP\bin\HSRP.pdb
 D:\SHANOO\AllStatusWebsite(24-06-2015)\BRStatus\BRStatus\HSRP\obj\Debug\HSRP.csprojResolveAssemblyReference.cache
 D:\SHANOO\AllStatusWebsite(24-06-2015)\BRStatus\BRStatus\HSRP\obj\Debug\HSRP.dll
 D:\SHANOO\AllStatusWebsite(24-06-2015)\BRStatus\BRStatus\HSRP\obj\Debug\HSRP.pdb
+D:\PROJECTS_APTG_22_May_2017\All_Status\BRStatus\HSRP\bin\HSRP.dll.config
+D:\PROJECTS_APTG_22_May_2017\All_Status\BRStatus\HSRP\bin\HSRP.dll
+D:\PROJECTS_APTG_22_May_2017\All_Status\BRStatus\HSRP\bin\HSRP.pdb
+D:\PROJECTS_APTG_22_May_2017\All_Status\BRStatus\HSRP\obj\Debug\HSRP.csprojResolveAssemblyReference.cache
+D:\PROJECTS_APTG_22_May_2017\All_Status\BRStatus\HSRP\obj\Debug\HSRP.dll
+D:\PROJECTS_APTG_22_May_2017\All_Status\BRStatus\HSRP\obj\Debug\HSRP.pdb

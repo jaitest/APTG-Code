@@ -257,3 +257,18 @@ C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailHP\Te
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailHP\TenderReports\obj\x86\Debug\AutoMailReportHP.TrustInfo.xml
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailHP\TenderReports\obj\x86\Debug\AutoMailReportHP.exe.manifest
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailHP\TenderReports\obj\x86\Debug\AutoMailReportHP.application
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\bin\Debug\AutoMailReportHP.exe.config
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\obj\x86\Debug\AutoMailReportHP.exe
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\obj\x86\Debug\AutoMailReportHP.pdb
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\bin\Debug\AutoMailReportHP.exe.manifest
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\bin\Debug\AutoMailReportHP.application
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\bin\Debug\AutoMailReportHP.exe
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\bin\Debug\AutoMailReportHP.pdb
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\obj\x86\Debug\TenderReports.csprojResolveAssemblyReference.cache
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\obj\x86\Debug\TenderReports.Form1.resources
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\obj\x86\Debug\TenderReports.frmAutoMailReport.resources
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\obj\x86\Debug\TenderReports.Properties.Resources.resources
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\obj\x86\Debug\TenderReports.csproj.GenerateResource.Cache
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\obj\x86\Debug\AutoMailReportHP.TrustInfo.xml
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\obj\x86\Debug\AutoMailReportHP.exe.manifest
+D:\HRProjects__22_May_2017\AutoMailer\AutomailHP\TenderReports\obj\x86\Debug\AutoMailReportHP.application

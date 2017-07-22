@@ -245,3 +245,6 @@ C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailBR\Te
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailBR\TenderReports\obj\x86\Debug\AutoMailReportsBR.TrustInfo.xml
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailBR\TenderReports\obj\x86\Debug\AutoMailReportsBR.exe.manifest
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailBR\TenderReports\obj\x86\Debug\AutoMailReportsBR.application
+D:\HRProjects__22_May_2017\AutoMailer\AutomailBR\TenderReports\bin\Debug\AutoMailReportsBR.exe.config
+D:\HRProjects__22_May_2017\AutoMailer\AutomailBR\TenderReports\obj\x86\Debug\AutoMailReportsBR.exe
+D:\HRProjects__22_May_2017\AutoMailer\AutomailBR\TenderReports\obj\x86\Debug\AutoMailReportsBR.pdb

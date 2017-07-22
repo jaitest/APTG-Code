@@ -1,0 +1,103 @@
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\Hsrptoerpbankdeposit\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+D:\SHANOO\kanti(Latestweb)\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.dll
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.dll
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+D:\sanu-backup\HSRPTOERP(25-06-2015)\HSRPTOERPCollectionbankdeposit(10-jun-15)\AllStateCollection\AllStateCollection\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.dll
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+C:\Users\Admin\Desktop\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode\AllStateCollectionLive\APCollectionWeb\bin\Ionic.Zip.Reduced.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\bin\Ionic.Zip.Reduced.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStateCollectionLive_FinalCode29\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.dll
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+D:\PROJECTUPDATEAmit\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStatecode\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.dll
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+C:\Projects\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.dll
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+C:\Projects\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll
+D:\HRProjects__22_May_2017\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll.config
+D:\HRProjects__22_May_2017\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.dll
+D:\HRProjects__22_May_2017\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.XmlSerializers.dll
+D:\HRProjects__22_May_2017\AllStateCollectionLive\APCollectionWeb\bin\APCollectionWeb.pdb
+D:\HRProjects__22_May_2017\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.csprojResolveAssemblyReference.cache
+D:\HRProjects__22_May_2017\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.dll
+D:\HRProjects__22_May_2017\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.pdb
+D:\HRProjects__22_May_2017\AllStateCollectionLive\APCollectionWeb\obj\Release\APCollectionWeb.XmlSerializers.dll

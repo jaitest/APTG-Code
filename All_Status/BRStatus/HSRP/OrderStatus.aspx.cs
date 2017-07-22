@@ -51,8 +51,6 @@ namespace HSRP
             dbLink.CommandTimeOut = 0;
             dbLink.sqlText = SQLString.ToString();
             SqlDataReader PReader = dbLink.GetReader();
-
-
             String SrNo = String.Empty;
             String RTOLocationName = String.Empty;
             String RTOLocationAddress = String.Empty;

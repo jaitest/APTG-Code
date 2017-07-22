@@ -1,0 +1,93 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="APCollectionWeb.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="APCollectionWeb_WebReference_SalesRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Auto%20Tech%20Pvt.%20Ltd.%20AP/Page/SalesRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_WebReference_Delhi_SalesRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.196:7057/RTL/WS/Rosmerta%20HSRP%20Ventures%20(P)%20Ltd/Page/SalesRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_WebReference_HR_SalesRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Utsav%20Reg%20Plate%20P%20Ltd.%20HR/Page/SalesRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_WebReference_UK_SalesRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Utsav%20HSRP%20Pvt.%20Ltd.-UK/Page/SalesRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_WebReference_MP_SalesRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.67:7057/LinkPoint/WS/Link%20Point%20Infra%20Pvt.%20Ltd.%20MP/Page/SalesRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_WebReference_HP_SalesRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Utsav%20Ventures%20P.%20Ltd.-HP/Page/SalesRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_WebReference_BR_SalesRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/SalesRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_WebReference_TG_SalesRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Auto%20Tech%20Pvt.%20Ltd.%20TG/Page/SalesRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_BankDepositRequestWS_DL_BankDepositRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.196:7057/RTL/WS/Rosmerta%20HSRP%20Ventures%20(P)%20Ltd/Page/BankDepositRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_BankDepositRequestWS_DL1_BankDepositRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.196:7057/RTL/WS/Rosmerta%20HSRP%20Ventures%20(P)%20Ltd/Page/BankDepositRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_RejectionProcess_DL_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.196:7057/RTL/WS/Rosmerta%20HSRP%20Ventures%20(P)%20Ltd/Page/RejectionRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_aptransport_HSRPAuthorizationService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://aptransport.in/apesevawebsrv/HSRPAuthorizationService.asmx</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_BankDepositRequestWS_BankDepositRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Auto%20Tech%20Pvt.%20Ltd.%20AP/Page/BankDepositRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_BankDepositRequestWS_BR_BankDepositRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/BankDepositRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_BankDepositRequestWS_HP_BankDepositRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Utsav%20Ventures%20P.%20Ltd.-HP/Page/BankDepositRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_BankDepositRequestWS_HR_BankDepositRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Utsav%20Reg%20Plate%20P%20Ltd.%20HR/Page/BankDepositRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_BankDepositRequestWS_TG_BankDepositRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Auto%20Tech%20Pvt.%20Ltd.%20TG/Page/BankDepositRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_BankDepositRequestWS_UK_BankDepositRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Utsav%20HSRP%20Pvt.%20Ltd.-UK/Page/BankDepositRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_RejectionProcess_HR_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Utsav%20Reg%20Plate%20P%20Ltd.%20HR/Page/RejectionRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_RejectionProcess_UK_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Utsav%20HSRP%20Pvt.%20Ltd.-UK/Page/RejectionRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_RejectionProcess_AP_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Auto%20Tech%20Pvt.%20Ltd.%20AP/Page/RejectionRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_RejectionProcess_BR_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/RejectionRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_RejectionProcess_TG_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Auto%20Tech%20Pvt.%20Ltd.%20TG/Page/RejectionRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_RejectionProcess_HP_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7057/LinkPoint/WS/Link%20Utsav%20Ventures%20P.%20Ltd.-HP/Page/RejectionRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_GetTgUpdatedCat_HSRPAuthorizationService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://aptransport.in/tgesevawebsrv/HSRPAuthorizationService.asmx</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_APWebreference_HSRPAuthorizationService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://aptransport.in/aprtawebsrv/hsrpauthorizationservice.asmx</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_WebReferenceNewBR_SalesRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7077/USS/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/SalesRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_RejectionRequestUSS_New_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7077/USS/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/RejectionRequestWS</Value>
+    </Setting>
+    <Setting Name="APCollectionWeb_RejectionProcess_Uss_BR_RejectionRequestWS_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.100.66:7077/USS/WS/Utsav%20safety%20systems%20P%20Ltd-BH/Page/RejectionRequestWS</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

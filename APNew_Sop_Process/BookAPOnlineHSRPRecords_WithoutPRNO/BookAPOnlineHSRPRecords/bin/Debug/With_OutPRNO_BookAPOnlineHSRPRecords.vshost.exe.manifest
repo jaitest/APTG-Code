@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="With_OutPRNO_BookAPOnlineHSRPRecords.exe" version="1.0.0.22" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="With_OutPRNO_BookAPOnlineHSRPRecords.exe" version="1.0.0.29" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="With_OutPRNO_BookAPOnlineHSRPRecords" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -54,24 +54,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="With_OutPRNO_BookAPOnlineHSRPRecords.exe" size="25600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="With_OutPRNO_BookAPOnlineHSRPRecords.exe" size="28672">
       <assemblyIdentity name="With_OutPRNO_BookAPOnlineHSRPRecords" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>czUctV2ODnrzLitio0GAXpegVBiNtDaCm7oKDtg7OuU=</dsig:DigestValue>
+        <dsig:DigestValue>EDZOleiyEq1Y5ERvRebihN7gEumKqZl+4xDnkeubAbU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="With_OutPRNO_BookAPOnlineHSRPRecords.exe.config" size="746">
+  <file name="With_OutPRNO_BookAPOnlineHSRPRecords.exe.config" size="800">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>8cRVcZKjf3+VkC8ntlXpizskwDRc7rOZINMHdybNCqU=</dsig:DigestValue>
+      <dsig:DigestValue>VgQ15yNWO5NL0X6eNLrh0t5lqIArzKYx1BftdqLr9HI=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

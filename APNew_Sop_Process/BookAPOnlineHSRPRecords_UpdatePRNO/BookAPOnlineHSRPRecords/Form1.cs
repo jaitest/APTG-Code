@@ -20,20 +20,6 @@ namespace BookAPOnlineHSRPRecords
             InitializeComponent();
         }
 
-        //public void timer1_Tick(object sender, EventArgs e)
-        //{
-        //    string strDate = DateTime.Now.ToString("hh:mm:ss tt");
-        //    #region  In case of Local
-        //    string strTime1 = "09:10:02 AM";
-
-        //    if (DateTime.Parse(strDate) == DateTime.Parse(strTime1))
-        //    {
-        //    #endregion
-        //        //button2_Click(button2, new EventArgs());
-
-        //    }
-        //}
-
         public void button1_Click(object sender, EventArgs e)
         {
             string StrVehicleClassType = string.Empty;
@@ -49,7 +35,7 @@ namespace BookAPOnlineHSRPRecords
             int i;
             string strProvider = System.Configuration.ConfigurationManager.AppSettings["ConnectionString"].ToString();
             string sqlquery = "select Distinct pr.prNumber as 'VehicleRegNo',h.hsrprecordid,pr.authorizationRefNo as'Hsrprecord_AuthorizationNo' from HSRPRecords h, prnumber_stagging pr where h.HSRP_StateID=9 and h.hsrprecord_AuthorizationNO=pr.authorizationRefNo and isnull(h.VehicleRegNo,'')='' and isnull(h.aptgvehrecdate,'')='' and h.paymentgateway='NewSOP-SBI' and addrecordby in('Dealer','OnlineDealer')";
-            //string sqlquery = "select Distinct h.hsrprecordid,pr.prNumber as 'VehicleRegNo',pr.authorizationRefNo as'Hsrprecord_AuthorizationNo' from HSRPRecords h, prnumber_stagging pr where h.HSRP_StateID=9 and h.hsrprecord_AuthorizationNO=pr.authorizationRefNo and isnull(h.VehicleRegNo,'')='' and isnull(h.aptgvehrecdate,'')='' and h.paymentgateway='NewSOP-SBI' and addrecordby in('Dealer','OnlineDealer')";
+            //string sqlquery = "select Distinct pr.prNumber as 'VehicleRegNo',h.hsrprecordid,pr.authorizationRefNo as'Hsrprecord_AuthorizationNo' from HSRPRecords h, prnumber_stagging pr where h.HSRP_StateID=9 and h.hsrprecord_AuthorizationNO=pr.authorizationRefNo and isnull(h.VehicleRegNo,'')='' and h.paymentgateway='NewSOP-SBI' and addrecordby in('Dealer','OnlineDealer')";          
             DataTable dtRecords = Utils.GetDataTable(sqlquery, strProvider);
 
             if (dtRecords.Rows.Count > 0)
@@ -58,7 +44,7 @@ namespace BookAPOnlineHSRPRecords
                 {
                     HsrpRecordid = dtRecords.Rows[k]["hsrprecordid"].ToString();
                     string straptgrecdate = System.DateTime.Now.ToString();
-                    string Query = "update hsrprecords set vehicleregno='" + dtRecords.Rows[k]["VehicleRegNo"].ToString() + "',aptgvehrecdate='" + straptgrecdate + "' ,addrecordby='Dealer', sendtoerp=NULL where  HSRP_StateID='9' and hsrprecordid ='" + dtRecords.Rows[k]["HSRPRecordID"].ToString() + "' and paymentgateway='NewSOP-SBI' ";
+                    string Query = "update hsrprecords set vehicleregno='" + dtRecords.Rows[k]["VehicleRegNo"].ToString() + "',aptgvehrecdate='" + straptgrecdate + "' ,addrecordby='OnlineDealer', sendtoerp='1' where  HSRP_StateID='9' and hsrprecordid ='" + dtRecords.Rows[k]["HSRPRecordID"].ToString() + "' and paymentgateway='NewSOP-SBI' ";
                     Utils.ExecNonQuery(Query, strProvider);
                     AddLog("***Records Update Successfully***- '" + dtRecords.Rows[k]["VehicleRegNo"].ToString() + "' " + System.DateTime.Now.ToString());
                 }
@@ -83,8 +69,7 @@ namespace BookAPOnlineHSRPRecords
         }
 
         public void timer1_Tick(object sender, EventArgs e)
-        {
-            //h:mm:ss tt
+        {            
             string strDate = DateTime.Now.ToString("h:mm:ss tt");
             #region  In case of Local
             string strTime1 = "08:31:20 PM";
@@ -97,23 +82,20 @@ namespace BookAPOnlineHSRPRecords
 
         }
 
-        #region  withupdatequery
-        //string sqlquery = "update hsrprecords set hsrprecords.VehicleRegNo=prnumber_stagging.prNumber,hsrprecords.aptgvehrecdate=getdate() from prnumber_stagging where hsrprecords.HSRPRecord_AuthorizationNo=prnumber_stagging.authorizationRefNo and isnull(hsrprecords.VehicleRegNo,'')='' and hsrprecords.hsrp_stateid=9 and hsrprecords.Paymentgateway='NewSop-SBI' and hsrprecords.APWebserviceRespMsg='Save successfully'";  
-        //int dtRecords = Utils.ExecNonQuery(sqlquery, strProvider);
-        //if (dtRecords > 0)
-        //{
-        //    AddLog("***Records Update Successfully ***-" + System.DateTime.Now.ToString());
-        //    label1.Text = "";
-        //    label1.Text = "Records Update Successfully";
+        public void timer2_Tick(object sender, EventArgs e)
+        {
+            string strDate = DateTime.Now.ToString("h:mm:ss tt");
+            #region  In case of Local
+            string strTime1 = "10:31:20 AM";
 
-        //}
-        //else
-        //{
-        //    AddLog("***Records Not Update Successfully***-" + System.DateTime.Now.ToString());
-        //    label1.Text = "";
-        //    label1.Text = "Records Not Update Successfully";
-        //}
-        #endregion
+            if (DateTime.Parse(strDate) == DateTime.Parse(strTime1))
+            {
+            #endregion
+                button1_Click(button1, new EventArgs());
+            }
+        }
+
+   
     }
 }
  

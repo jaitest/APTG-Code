@@ -73,6 +73,7 @@
     <Content Include="AppoientmentForInstallation.aspx" />
     <Content Include="check_status.htm" />
     <Content Include="Complaints.aspx" />
+    <Content Include="complaints.htm" />
     <Content Include="frmComplaints.aspx" />
     <Content Include="css\main.css" />
     <Content Include="images\bottombgfooter.jpg" />

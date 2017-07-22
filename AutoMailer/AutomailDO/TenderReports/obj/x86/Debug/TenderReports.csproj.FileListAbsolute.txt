@@ -292,3 +292,18 @@ D:\PROJECTUPDATEAmit\AUTOMAILER\AutomailDO\TenderReports\obj\x86\Debug\AutoMailO
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailDO\TenderReports\bin\Debug\AutoMailOutStanddealer.exe.config
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailDO\TenderReports\obj\x86\Debug\AutoMailOutStanddealer.exe
 C:\Users\AnshulGupta\Desktop\vimal_haryana _code\Gautam\AUTOMAILER\AutomailDO\TenderReports\obj\x86\Debug\AutoMailOutStanddealer.pdb
+C:\Projects\AutoMailer\AutomailDO\TenderReports\bin\Debug\AutoMailOutStanddealer.exe.config
+C:\Projects\AutoMailer\AutomailDO\TenderReports\obj\x86\Debug\AutoMailOutStanddealer.exe
+C:\Projects\AutoMailer\AutomailDO\TenderReports\obj\x86\Debug\AutoMailOutStanddealer.pdb
+C:\Projects\AutoMailer\AutomailDO\TenderReports\bin\Debug\AutoMailOutStanddealer.exe.manifest
+C:\Projects\AutoMailer\AutomailDO\TenderReports\bin\Debug\AutoMailOutStanddealer.application
+C:\Projects\AutoMailer\AutomailDO\TenderReports\bin\Debug\AutoMailOutStanddealer.exe
+C:\Projects\AutoMailer\AutomailDO\TenderReports\bin\Debug\AutoMailOutStanddealer.pdb
+C:\Projects\AutoMailer\AutomailDO\TenderReports\obj\x86\Debug\TenderReports.csprojResolveAssemblyReference.cache
+C:\Projects\AutoMailer\AutomailDO\TenderReports\obj\x86\Debug\TenderReports.Form1.resources
+C:\Projects\AutoMailer\AutomailDO\TenderReports\obj\x86\Debug\TenderReports.frmAutoMailReport.resources
+C:\Projects\AutoMailer\AutomailDO\TenderReports\obj\x86\Debug\TenderReports.Properties.Resources.resources
+C:\Projects\AutoMailer\AutomailDO\TenderReports\obj\x86\Debug\TenderReports.csproj.GenerateResource.Cache
+C:\Projects\AutoMailer\AutomailDO\TenderReports\obj\x86\Debug\AutoMailOutStanddealer.TrustInfo.xml
+C:\Projects\AutoMailer\AutomailDO\TenderReports\obj\x86\Debug\AutoMailOutStanddealer.exe.manifest
+C:\Projects\AutoMailer\AutomailDO\TenderReports\obj\x86\Debug\AutoMailOutStanddealer.application
